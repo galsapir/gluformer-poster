@@ -11,7 +11,7 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700;8..60,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   </head>
 
   <body vocab="http://schema.org/" typeof="ScholarlyArticle">
@@ -22,8 +22,8 @@
         </a>
       </aside>
       <div>
-        <h1 property="headline">A Foundation Model for Continuous Glucose Monitoring Data</h1>
-        <h2 property="alternativeHeadline">GluFormer learns generalizable representations of metabolic health from 10 million glucose measurements</h2>
+        <h1 property="headline">GluFormer Predicts Diabetes and Cardiovascular Mortality Up to 12 Years Ahead from Glucose Data</h1>
+        <h2 property="alternativeHeadline">A foundation model trained on 10 million glucose measurements learns representations that outperform clinical gold standards</h2>
         <address>
           <a property="author">Guy Lutsker<sup>1,2,3</sup></a>,
           <a property="author"><strong>Gal Sapir</strong><sup>1,4</sup></a>,
@@ -71,128 +71,133 @@
 
     <main property="articleBody">
 
-      <!-- ============== COLUMN 1: Motivation + Architecture ============== -->
+      <!-- ============== ZONE 1: HERO — The showstopper result ============== -->
 
-      <article property="abstract">
-        <header><h3>Key Finding</h3></header>
-        <p class="highlight-box">
-          A generative transformer trained on <strong>10 million glucose measurements</strong>
-          learns representations that predict diabetes onset and cardiovascular mortality
-          <strong>12 years in advance</strong> — outperforming gold-standard clinical markers.
-        </p>
+      <article class="hero-panel" property="abstract">
+        <header><h3>The Headline Result</h3></header>
+        <div class="hero-grid">
+          <div class="hero-figure">
+            <figure>
+              <img src="assets/figures/7.png" alt="Kaplan-Meier curves showing GluFormer significantly predicts future diabetes onset while HbA1c does not.">
+              <figcaption><strong>Figure 1.</strong> AEGIS cohort (n=580): GluFormer predicts 12-year diabetes onset (p=2.3×10<sup>−6</sup>); HbA1c does not.</figcaption>
+            </figure>
+          </div>
+          <div class="hero-figure">
+            <figure>
+              <img src="assets/figures/8.png" alt="GluFormer predicts cardiovascular death while HbA1c shows no significant separation.">
+              <figcaption><strong>Figure 2.</strong> Cardiovascular mortality: GluFormer achieves significant stratification (p=1.0×10<sup>−3</sup>); HbA1c does not.</figcaption>
+            </figure>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card stat-diabetes">
+              <span class="stat-number">66%</span>
+              <span class="stat-label">of new-onset diabetes in GluFormer's top risk quartile</span>
+              <span class="stat-contrast">vs. 7% in bottom quartile</span>
+            </div>
+            <div class="stat-card stat-cv">
+              <span class="stat-number">69%</span>
+              <span class="stat-label">of cardiovascular deaths in the top quartile</span>
+              <span class="stat-contrast">0% in bottom quartile</span>
+            </div>
+          </div>
+        </div>
       </article>
 
-      <article>
-        <header><h3>Motivation</h3></header>
-        <p>Continuous glucose monitors (CGMs) capture rich temporal dynamics of metabolic health, yet current clinical practice reduces these complex signals to simple summary statistics (e.g., average glucose, time-in-range).</p>
-        <p><strong>Can we learn richer representations?</strong> Inspired by the success of large language models, we treat glucose time series as sequences and apply autoregressive self-supervised learning to capture latent metabolic patterns.</p>
+      <!-- ============== PUNCHLINE — Readable from across the room ============== -->
+
+      <article class="punchline">
+        <p>Two weeks of glucose monitoring encodes a decade of health trajectory — and standard clinical metrics miss most of it.</p>
       </article>
+
+      <!-- ============== ZONE 2: Architecture & Approach ============== -->
 
       <article>
         <header><h3>GluFormer Architecture</h3></header>
         <figure>
-          <img src="assets/figures/1.png" alt="GluFormer architecture: CGM data is tokenized and fed into a 16-layer transformer that learns representations via next-token prediction, enabling downstream clinical tasks.">
-          <figcaption><strong>Figure 1.</strong> GluFormer treats CGM data as a language — tokenizing glucose measurements and training a 16-layer transformer via next-token prediction on data from 10,812 participants.</figcaption>
+          <img src="assets/figures/1.png" alt="GluFormer architecture: CGM data is tokenized and fed into a 16-layer transformer.">
+          <figcaption><strong>Figure 3.</strong> GluFormer tokenizes raw glucose values into 460 discrete bins and trains a 16-layer transformer via next-token prediction on data from 10,812 participants.</figcaption>
         </figure>
       </article>
 
       <article>
         <header><h3>How It Works</h3></header>
         <ol>
-          <li><strong>Tokenize</strong> — Continuous glucose values are discretized into tokens, analogous to words in natural language</li>
-          <li><strong>Pre-train</strong> — A 16-layer transformer learns to predict the next glucose token in an autoregressive fashion on &gt;10M measurements</li>
-          <li><strong>Extract</strong> — The model's internal representations encode rich metabolic phenotypes</li>
-          <li><strong>Apply</strong> — These learned embeddings transfer to diverse downstream clinical prediction tasks</li>
+          <li><strong>Tokenize</strong> — Glucose values discretized into 460 tokens, like words in language</li>
+          <li><strong>Pre-train</strong> — 16-layer transformer learns next-token prediction on &gt;10M measurements</li>
+          <li><strong>Extract</strong> — Internal representations encode rich metabolic phenotypes</li>
+          <li><strong>Apply</strong> — Embeddings transfer to diverse clinical prediction tasks</li>
         </ol>
       </article>
 
-      <!-- ============== COLUMN 2: Generalization ============== -->
+      <!-- ============== ZONE 3: Generalization & Validation ============== -->
 
       <article>
         <header><h3>Global Generalization</h3></header>
         <figure>
-          <img src="assets/figures/4.png" alt="World map showing GluFormer generalizes across 19 external cohorts spanning 5 countries, 8 CGM devices, and diverse clinical conditions.">
-          <figcaption><strong>Figure 2.</strong> Representations generalize across <strong>19 external cohorts</strong> (n=6,044) spanning 5 countries, 8 CGM devices, and diverse conditions: T1D, T2D, gestational diabetes, obesity, and breast cancer.</figcaption>
+          <img src="assets/figures/4.png" alt="GluFormer generalizes across 19 external cohorts spanning 5 countries and 8 CGM devices.">
+          <figcaption><strong>Figure 4.</strong> Validated across <strong>19 external cohorts</strong> (n=6,044), 5 countries, 8 CGM devices — including T1D, T2D, gestational diabetes, obesity, and breast cancer.</figcaption>
         </figure>
       </article>
 
       <article>
-        <header><h3>Representations Capture Metabolic Phenotypes</h3></header>
+        <header><h3>Learned Metabolic Phenotypes</h3></header>
         <figure>
-          <img src="assets/figures/3.png" alt="UMAP visualization showing GluFormer embeddings organize by postprandial glucose response and fasting glucose levels.">
-          <figcaption><strong>Figure 3.</strong> UMAP of GluFormer embeddings from an external cohort. The learned representation space organizes meaningfully by <strong>(A)</strong> postprandial glucose response and <strong>(B)</strong> fasting glucose — phenotypes the model was never explicitly trained on.</figcaption>
+          <img src="assets/figures/3.png" alt="UMAP visualization of GluFormer embeddings organized by glucose response and fasting glucose.">
+          <figcaption><strong>Figure 5.</strong> UMAP of embeddings organizes by <strong>(A)</strong> postprandial glucose response and <strong>(B)</strong> fasting glucose — phenotypes never explicitly trained on.</figcaption>
         </figure>
       </article>
 
       <article>
-        <header><h3>Outperforms Standard CGM Metrics</h3></header>
+        <header><h3>Outperforms Standard Metrics</h3></header>
         <figure>
-          <img src="assets/figures/5.png" alt="Bar charts and curves showing GluFormer achieves higher ROC-AUC (0.75) than CGM Composite Scores (0.69) and GMI (0.66) for diabetes prediction across multiple time horizons.">
-          <figcaption><strong>Figure 4.</strong> GluFormer consistently outperforms traditional CGM metrics (Composite Scores, GMI) for diabetes prediction and glycemic parameter forecasting across three time horizons.</figcaption>
+          <img src="assets/figures/5.png" alt="GluFormer achieves higher AUC than CGM Composite Scores and GMI.">
+          <figcaption><strong>Figure 6.</strong> GluFormer consistently outperforms traditional CGM metrics for diabetes prediction across three time horizons.</figcaption>
         </figure>
       </article>
 
-      <!-- ============== COLUMN 3: Clinical Impact ============== -->
+      <!-- ============== ZONE 4: Clinical Applications ============== -->
 
       <article>
-        <header><h3>Predicting Diabetes 12 Years Ahead</h3></header>
+        <header><h3>Prediabetes Stratification</h3></header>
         <figure>
-          <img src="assets/figures/7.png" alt="Kaplan-Meier curves showing GluFormer significantly predicts future diabetes onset (p=2.3e-6) while HbA1c does not, over a 12-year follow-up in 580 adults.">
-          <figcaption><strong>Figure 5.</strong> In the AEGIS cohort (n=580), GluFormer risk stratification <strong>significantly predicts</strong> 12-year diabetes onset (log-rank p=2.3×10<sup>−6</sup>), while HbA1c — the clinical gold standard — <strong>does not</strong>.</figcaption>
-        </figure>
-        <p class="highlight-result"><strong>66%</strong> of new-onset diabetes cases fall in GluFormer's top risk quartile vs. only <strong>7%</strong> in the bottom quartile.</p>
-      </article>
-
-      <article>
-        <header><h3>Predicting Cardiovascular Mortality</h3></header>
-        <figure>
-          <img src="assets/figures/8.png" alt="Cumulative death curves showing GluFormer predicts cardiovascular death (p=1.0e-3) while HbA1c ranking shows no significant separation.">
-          <figcaption><strong>Figure 6.</strong> The same pattern holds for cardiovascular mortality: GluFormer achieves significant stratification (p=1.0×10<sup>−3</sup>) while HbA1c shows no predictive power.</figcaption>
-        </figure>
-        <p class="highlight-result"><strong>69%</strong> of CV deaths in the top quartile. <strong>0%</strong> in the bottom quartile.</p>
-      </article>
-
-      <article>
-        <header><h3>Prediabetes: Who Will Deteriorate?</h3></header>
-        <figure>
-          <img src="assets/figures/6.png" alt="Box plots showing GluFormer stratifies prediabetic patients by future HbA1c trajectory over 2 years, while baseline HbA1c cannot.">
-          <figcaption><strong>Figure 7.</strong> Among 337 prediabetic individuals, GluFormer identifies who will experience <strong>rising HbA1c</strong> vs. <strong>improving HbA1c</strong> over 2 years — enabling targeted preventive interventions.</figcaption>
+          <img src="assets/figures/6.png" alt="GluFormer stratifies prediabetic patients by future HbA1c trajectory.">
+          <figcaption><strong>Figure 7.</strong> Among 337 prediabetic individuals, GluFormer identifies who will experience <strong>rising</strong> vs. <strong>improving</strong> HbA1c over 2 years.</figcaption>
         </figure>
       </article>
-
-      <!-- ============== COLUMN 4: Multimodal + Conclusions ============== -->
 
       <article>
         <header><h3>Multi-Modal: Diet + Glucose</h3></header>
         <figure>
-          <img src="assets/figures/9.png" alt="Multi-modal GluFormer integrates dietary tokens with glucose data to predict personalized glycemic responses to meals.">
-          <figcaption><strong>Figure 8.</strong> By integrating dietary tokens, GluFormer generates personalized glucose response predictions for specific meals — enabling dietary intervention simulation.</figcaption>
+          <img src="assets/figures/9.png" alt="Multi-modal GluFormer integrates dietary tokens with glucose data.">
+          <figcaption><strong>Figure 8.</strong> Integrating dietary tokens enables personalized glucose response predictions — simulating dietary interventions.</figcaption>
         </figure>
       </article>
 
       <article>
         <header><h3>Generative Quality</h3></header>
         <figure>
-          <img src="assets/figures/2.png" alt="Generated vs observed CGM traces showing GluFormer produces physiologically plausible glucose trajectories.">
-          <figcaption><strong>Figure 9.</strong> GluFormer generates physiologically realistic glucose trajectories that closely match observed CGM data, including diet-conditioned generation.</figcaption>
+          <img src="assets/figures/2.png" alt="Generated vs observed CGM traces.">
+          <figcaption><strong>Figure 9.</strong> GluFormer generates physiologically realistic glucose trajectories that closely match observed data.</figcaption>
         </figure>
       </article>
 
-      <article>
-        <header><h3>Interactive: Glucose Trace Explorer</h3></header>
-        <div id="glucose-explorer" style="width:100%; min-height:280px;"></div>
-        <p class="small">Simulated glucose traces showing GluFormer's context window and predicted generation. Hover for values.</p>
-      </article>
+      <!-- ============== ZONE 5: Interactive + Takeaways ============== -->
 
       <article>
+        <header><h3>Glucose Trace Explorer</h3></header>
+        <div id="glucose-explorer" style="width:100%; min-height:280px;"></div>
+        <p class="small">Simulated CGM traces showing GluFormer's context window and predicted generation. Hover for values.</p>
+      </article>
+
+      <article class="takeaways">
         <header><h3>Key Takeaways</h3></header>
-        <ol>
-          <li><strong>Foundation model for CGM</strong> — Self-supervised learning on 10M+ glucose measurements captures rich metabolic representations</li>
-          <li><strong>Universal generalization</strong> — Validated across 19 cohorts, 5 countries, 8 devices, multiple disease states</li>
-          <li><strong>Clinical superiority</strong> — Outperforms HbA1c and standard CGM metrics for long-term risk prediction</li>
-          <li><strong>Actionable stratification</strong> — Identifies at-risk prediabetic individuals years before clinical deterioration</li>
-          <li><strong>Multi-modal capable</strong> — Integrates dietary data for personalized nutrition insights</li>
-        </ol>
+        <ul>
+          <li><strong>Foundation model for CGM</strong> — Self-supervised learning on 10M+ glucose measurements</li>
+          <li><strong>19 cohorts, 5 countries, 8 devices</strong> — Universal generalization</li>
+          <li><strong>Outperforms HbA1c</strong> — Superior long-term risk prediction</li>
+          <li><strong>Actionable</strong> — Identifies at-risk individuals years before deterioration</li>
+          <li><strong>Multi-modal</strong> — Integrates dietary data for precision nutrition</li>
+        </ul>
         <div class="qr-section">
           <div class="qr-links">
             <p><strong>Paper:</strong> <a href="https://www.nature.com/articles/s41586-025-09925-9">nature.com/articles/s41586-025-09925-9</a></p>
@@ -265,7 +270,7 @@
             x: context.map(p => p.x),
             y: context.map(p => p.y),
             name: 'Context (Observed)',
-            line: { color: '#1B3A5C', width: 2 },
+            line: { color: '#1B2A4A', width: 2 },
             type: 'scatter'
           },
           {
@@ -279,7 +284,7 @@
             x: generated.map(p => p.x),
             y: generated.map(p => p.y),
             name: 'GluFormer Prediction',
-            line: { color: '#DC2626', width: 2.5 },
+            line: { color: '#E63946', width: 2.5 },
             type: 'scatter'
           }
         ];
@@ -313,13 +318,13 @@
             type: 'line',
             x0: meal.time, x1: meal.time,
             y0: 55, y1: 65,
-            line: { color: '#059669', width: 2 }
+            line: { color: '#2A9D8F', width: 2 }
           });
           annotations.push({
             x: meal.time, y: 60,
             text: meal.label,
             showarrow: false,
-            font: { size: 9, color: '#059669' },
+            font: { size: 9, color: '#2A9D8F' },
             textangle: 0
           });
         });
