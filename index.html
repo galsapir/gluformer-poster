@@ -7,8 +7,6 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
     <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
 
-    <script type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700;8..60,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,23 +20,24 @@
         </a>
       </aside>
       <div>
-        <h1 property="headline">GluFormer Predicts Diabetes and Cardiovascular Mortality Up to 12 Years Ahead from Glucose Data</h1>
-        <h2 property="alternativeHeadline">A foundation model trained on 10 million glucose measurements learns representations that outperform clinical gold standards</h2>
+        <h1 property="headline">GluFormer Predicts Diabetes and Cardiovascular Mortality Up to 11 Years Ahead from Glucose Data</h1>
+        <h2 property="alternativeHeadline">A foundation model trained on more than 10 million glucose measurements learns representations that outperform clinical gold standards</h2>
         <address>
           <a property="author">Guy Lutsker<sup>1,2,3</sup></a>,
           <a property="author"><strong>Gal Sapir</strong><sup>1,4</sup></a>,
           <a property="author">Smadar Shilo<sup>1,2,5,6</sup></a>,
-          <a property="author">Jordi Merino<sup>7,8,9</sup></a>,
+          <a property="author">Jordi Merino<sup>7,8</sup></a>,
           <a property="author">Anastasia Godneva<sup>1,2</sup></a>,
-          <a property="author">Jerry R. Greenfield<sup>10,11,12</sup></a>,
-          <a property="author">Dorit Samocha-Bonet<sup>10,11</sup></a>,
-          <a property="author">Raja Dhir<sup>13</sup></a>,
-          <a property="author">Francisco Gude<sup>14,15</sup></a>,
+          <a property="author">Jerry R. Greenfield<sup>9,10,11</sup></a>,
+          <a property="author">Dorit Samocha-Bonet<sup>9,10</sup></a>,
+          <a property="author">Raja Dhir<sup>12</sup></a>,
+          <a property="author">Francisco Gude<sup>13,14</sup></a>,
           <a property="author">Shie Mannor<sup>3</sup></a>,
           <a property="author">Eli Meirom<sup>3</sup></a>,
+          <a property="author">Eric P. Xing<sup>15,16</sup></a>,
           <a property="author">Gal Chechik<sup>3</sup></a>,
-          <a property="author">Hagai Rossman<sup>4,*</sup></a>,
-          <a property="author">Eran Segal<sup>1,16,*</sup></a>
+          <a property="author">Hagai Rossman<sup>4,16,✉</sup></a>,
+          <a property="author">Eran Segal<sup>1,16,✉</sup></a>
           <br/>
           <span class="affiliations">
             <sup>1</sup>Dept. of Computer Science and Applied Mathematics, Weizmann Institute of Science &nbsp;
@@ -47,15 +46,15 @@
             <sup>4</sup>Pheno.AI, Tel Aviv &nbsp;
             <sup>5</sup>Faculty of Medical and Health Sciences, Tel Aviv University &nbsp;
             <sup>6</sup>Schneider Children's Medical Center of Israel &nbsp;
-            <sup>7</sup>Novo Nordisk Foundation, University of Copenhagen &nbsp;
-            <sup>8</sup>Massachusetts General Hospital, Boston &nbsp;
-            <sup>9</sup>Center for Genomic Medicine, MGH &nbsp;
-            <sup>10</sup>Garvan Institute of Medical Research, Sydney &nbsp;
-            <sup>11</sup>St Vincent's Clinical School, UNSW, Sydney &nbsp;
-            <sup>12</sup>St Vincent's Hospital, Sydney &nbsp;
-            <sup>13</sup>SIAF, University of Zurich &nbsp;
-            <sup>14</sup>University of Santiago de Compostela &nbsp;
-            <sup>15</sup>Concepción Arenal Primary Care Center, Santiago de Compostela &nbsp;
+            <sup>7</sup>Novo Nordisk Foundation Center for Basic Metabolic Research, University of Copenhagen &nbsp;
+            <sup>8</sup>Diabetes Unit, Massachusetts General Hospital, Boston &nbsp;
+            <sup>9</sup>Garvan Institute of Medical Research, Sydney &nbsp;
+            <sup>10</sup>St Vincent's Clinical Campus, UNSW, Sydney &nbsp;
+            <sup>11</sup>St Vincent's Hospital, Sydney &nbsp;
+            <sup>12</sup>SIAF, University of Zurich &nbsp;
+            <sup>13</sup>University of Santiago de Compostela &nbsp;
+            <sup>14</sup>Concepción Arenal Primary Care Center, Santiago de Compostela &nbsp;
+            <sup>15</sup>Carnegie Mellon University, Pittsburgh &nbsp;
             <sup>16</sup>MBZUAI, Abu Dhabi
           </span>
         </address>
@@ -79,23 +78,23 @@
           <div class="hero-figure">
             <figure>
               <img src="assets/figures/7.png" alt="Kaplan-Meier curves showing GluFormer significantly predicts future diabetes onset while HbA1c does not.">
-              <figcaption><strong>Figure 1.</strong> AEGIS cohort (n=580): GluFormer predicts 12-year diabetes onset (p=2.3×10<sup>−6</sup>); HbA1c does not.</figcaption>
+              <figcaption><strong>Figure 1.</strong> AEGIS cohort (n=580, 11-year median follow-up): GluFormer predicts diabetes onset (p=2.3×10<sup>−6</sup>); HbA1c does not (p=0.71).</figcaption>
             </figure>
           </div>
           <div class="hero-figure">
             <figure>
               <img src="assets/figures/8.png" alt="GluFormer predicts cardiovascular death while HbA1c shows no significant separation.">
-              <figcaption><strong>Figure 2.</strong> Cardiovascular mortality: GluFormer achieves significant stratification (p=1.0×10<sup>−3</sup>); HbA1c does not.</figcaption>
+              <figcaption><strong>Figure 2.</strong> Cardiovascular mortality: GluFormer achieves significant stratification (p=0.001); HbA1c does not (p=0.25).</figcaption>
             </figure>
           </div>
           <div class="hero-stats">
             <div class="stat-card stat-diabetes">
-              <span class="stat-number">66%</span>
+              <span class="stat-number">65.8%</span>
               <span class="stat-label">of new-onset diabetes in GluFormer's top risk quartile</span>
-              <span class="stat-contrast">vs. 7% in bottom quartile</span>
+              <span class="stat-contrast">vs. 7.3% in bottom quartile</span>
             </div>
             <div class="stat-card stat-cv">
-              <span class="stat-number">69%</span>
+              <span class="stat-number">69.2%</span>
               <span class="stat-label">of cardiovascular deaths in the top quartile</span>
               <span class="stat-contrast">0% in bottom quartile</span>
             </div>
@@ -115,15 +114,11 @@
         <header><h3>GluFormer Architecture</h3></header>
         <figure>
           <img src="assets/figures/1.png" alt="GluFormer architecture: CGM data is tokenized and fed into a 16-layer transformer.">
-          <figcaption><strong>Figure 3.</strong> GluFormer tokenizes raw glucose values into 460 discrete bins and trains a 16-layer transformer via next-token prediction on data from 10,812 participants.</figcaption>
+          <figcaption><strong>Figure 3.</strong> Glucose values tokenized into 460 discrete bins; a 16-layer transformer learns next-token prediction on data from 10,812 participants.</figcaption>
         </figure>
-      </article>
-
-      <article>
-        <header><h3>How It Works</h3></header>
         <ol>
-          <li><strong>Tokenize</strong> — Glucose values discretized into 460 tokens, like words in language</li>
-          <li><strong>Pre-train</strong> — 16-layer transformer learns next-token prediction on &gt;10M measurements</li>
+          <li><strong>Tokenize</strong> — Glucose values become discrete tokens, like words in language</li>
+          <li><strong>Pre-train</strong> — Transformer learns glucose dynamics via next-token prediction</li>
           <li><strong>Extract</strong> — Internal representations encode rich metabolic phenotypes</li>
           <li><strong>Apply</strong> — Embeddings transfer to diverse clinical prediction tasks</li>
         </ol>
@@ -140,18 +135,10 @@
       </article>
 
       <article>
-        <header><h3>Learned Metabolic Phenotypes</h3></header>
-        <figure>
-          <img src="assets/figures/3.png" alt="UMAP visualization of GluFormer embeddings organized by glucose response and fasting glucose.">
-          <figcaption><strong>Figure 5.</strong> UMAP of embeddings organizes by <strong>(A)</strong> postprandial glucose response and <strong>(B)</strong> fasting glucose — phenotypes never explicitly trained on.</figcaption>
-        </figure>
-      </article>
-
-      <article>
         <header><h3>Outperforms Standard Metrics</h3></header>
         <figure>
           <img src="assets/figures/5.png" alt="GluFormer achieves higher AUC than CGM Composite Scores and GMI.">
-          <figcaption><strong>Figure 6.</strong> GluFormer consistently outperforms traditional CGM metrics for diabetes prediction across three time horizons.</figcaption>
+          <figcaption><strong>Figure 5.</strong> GluFormer consistently outperforms traditional CGM metrics (ROC AUC: 0.75 vs. 0.69 iglu vs. 0.66 GMI) for diabetes prediction across three time horizons.</figcaption>
         </figure>
       </article>
 
@@ -161,7 +148,7 @@
         <header><h3>Prediabetes Stratification</h3></header>
         <figure>
           <img src="assets/figures/6.png" alt="GluFormer stratifies prediabetic patients by future HbA1c trajectory.">
-          <figcaption><strong>Figure 7.</strong> Among 337 prediabetic individuals, GluFormer identifies who will experience <strong>rising</strong> vs. <strong>improving</strong> HbA1c over 2 years.</figcaption>
+          <figcaption><strong>Figure 6.</strong> Among 337 prediabetic individuals, GluFormer identifies who will experience <strong>rising</strong> (+0.18%) vs. <strong>improving</strong> (−0.13%) HbA1c over 2 years (p&lt;0.001).</figcaption>
         </figure>
       </article>
 
@@ -169,34 +156,26 @@
         <header><h3>Multi-Modal: Diet + Glucose</h3></header>
         <figure>
           <img src="assets/figures/9.png" alt="Multi-modal GluFormer integrates dietary tokens with glucose data.">
-          <figcaption><strong>Figure 8.</strong> Integrating dietary tokens enables personalized glucose response predictions — simulating dietary interventions.</figcaption>
-        </figure>
-      </article>
-
-      <article>
-        <header><h3>Generative Quality</h3></header>
-        <figure>
-          <img src="assets/figures/2.png" alt="Generated vs observed CGM traces.">
-          <figcaption><strong>Figure 9.</strong> GluFormer generates physiologically realistic glucose trajectories that closely match observed data.</figcaption>
+          <figcaption><strong>Figure 7.</strong> Integrating dietary tokens improves glucose prediction (91% improved correlation, 92% reduced error) — enabling personalized dietary simulation.</figcaption>
         </figure>
       </article>
 
       <!-- ============== ZONE 5: Interactive + Takeaways ============== -->
 
       <article>
-        <header><h3>Glucose Trace Explorer</h3></header>
+        <header><h3>Real CGM Data: 48-Hour Glucose Trace</h3></header>
         <div id="glucose-explorer" style="width:100%; min-height:280px;"></div>
-        <p class="small">Simulated CGM traces showing GluFormer's context window and predicted generation. Hover for values.</p>
+        <p class="small">Real continuous glucose monitoring data from a study participant, with meal events overlaid. Hover for details.</p>
       </article>
 
       <article class="takeaways">
-        <header><h3>Key Takeaways</h3></header>
+        <header><h3>Why It Matters</h3></header>
+        <p class="small" style="margin-bottom:0.3rem">Diabetes affects <strong>500M+ people</strong> worldwide (projected 1.3B by 2050). Over-the-counter CGM devices are now FDA-approved for non-diabetic adults — creating a massive new data source for early detection.</p>
         <ul>
-          <li><strong>Foundation model for CGM</strong> — Self-supervised learning on 10M+ glucose measurements</li>
-          <li><strong>19 cohorts, 5 countries, 8 devices</strong> — Universal generalization</li>
-          <li><strong>Outperforms HbA1c</strong> — Superior long-term risk prediction</li>
-          <li><strong>Actionable</strong> — Identifies at-risk individuals years before deterioration</li>
-          <li><strong>Multi-modal</strong> — Integrates dietary data for precision nutrition</li>
+          <li><strong>65.8% of future diabetes</strong> captured in one risk quartile — from just 14 days of glucose data</li>
+          <li><strong>AUC 0.75</strong> vs. 0.66 for standard metrics — across baseline, 2-year, and 4-year horizons</li>
+          <li><strong>19 cohorts, 5 countries</strong> — generalizes across devices, ethnicities, and disease states</li>
+          <li><strong>Precision nutrition</strong> — dietary tokens enable personalized glucose response predictions</li>
         </ul>
         <div class="qr-section">
           <div class="qr-links">
@@ -221,133 +200,90 @@
     </footer>
 
     <script>
-      // Interactive Glucose Trace Explorer
       document.addEventListener('DOMContentLoaded', function() {
-        // Generate synthetic but realistic CGM data
-        function generateGlucoseTrace(hours, baseGlucose, volatility, seed) {
-          const points = [];
-          let glucose = baseGlucose;
-          const dt = 5; // 5-minute intervals
-          const n = (hours * 60) / dt;
-          let rng = seed;
-          for (let i = 0; i < n; i++) {
-            // Simple pseudorandom
-            rng = (rng * 16807 + 0) % 2147483647;
-            const rand = (rng / 2147483647) - 0.5;
+        // Real CGM data from a study participant (48h, 15-min intervals)
+        // Hours from Day 1 00:00, glucose in mg/dL
+        var cgm = [[0.23,104.4],[0.48,108.0],[0.73,108.0],[0.98,104.4],[1.23,99.0],[1.48,97.2],[1.73,95.4],[1.98,95.4],[2.23,93.6],[2.48,93.6],[2.73,91.8],[2.98,91.8],[3.23,86.4],[3.48,84.6],[3.73,88.2],[3.98,88.2],[4.23,88.2],[4.48,90.0],[4.73,88.2],[4.98,86.4],[5.23,86.4],[5.48,90.0],[5.73,91.8],[5.98,91.8],[6.23,91.8],[6.48,91.8],[6.73,90.0],[6.98,91.8],[7.23,91.8],[7.48,90.0],[7.73,90.0],[7.98,88.2],[8.23,88.2],[8.48,88.2],[8.73,90.0],[8.98,91.8],[9.23,88.2],[9.48,90.0],[9.73,91.8],[9.98,95.4],[10.23,100.8],[10.48,102.6],[10.73,100.8],[10.98,97.2],[11.23,100.8],[11.48,104.4],[11.73,104.4],[11.98,100.8],[12.23,104.4],[12.48,108.0],[12.73,102.6],[12.98,97.2],[13.23,88.2],[13.48,82.8],[13.73,86.4],[13.98,97.2],[14.23,109.8],[14.48,115.2],[14.73,111.6],[14.98,100.8],[15.23,93.6],[15.48,93.6],[15.73,91.8],[15.98,91.8],[16.23,97.2],[16.48,99.0],[16.73,95.4],[16.98,93.6],[17.23,91.8],[17.48,93.6],[17.73,100.8],[17.98,100.8],[18.23,95.4],[18.48,93.6],[18.73,97.2],[18.98,104.4],[19.23,120.6],[19.48,133.2],[19.73,129.6],[19.98,117.0],[20.23,100.8],[20.48,91.8],[20.73,91.8],[20.98,93.6],[21.23,97.2],[21.48,111.6],[21.73,120.6],[21.98,111.6],[22.23,95.4],[22.48,88.2],[22.73,88.2],[22.98,93.6],[23.23,104.4],[23.48,111.6],[23.73,104.4],[23.98,91.8],[24.23,88.2],[24.48,91.8],[24.73,95.4],[24.98,97.2],[25.23,99.0],[25.48,100.8],[25.73,99.0],[25.98,95.4],[26.23,95.4],[26.48,93.6],[26.73,91.8],[26.98,91.8],[27.23,91.8],[27.48,91.8],[27.73,93.6],[27.98,93.6],[28.23,91.8],[28.48,91.8],[28.73,91.8],[28.98,88.2],[29.23,90.0],[29.48,90.0],[29.73,86.4],[29.98,84.6],[30.23,82.8],[30.48,84.6],[30.73,86.4],[30.98,88.2],[31.23,88.2],[31.48,88.2],[31.73,86.4],[31.98,84.6],[32.23,82.8],[32.48,84.6],[32.73,86.4],[32.98,88.2],[33.23,88.2],[33.48,88.2],[33.73,90.0],[33.98,90.0],[34.23,93.6],[34.48,106.2],[34.73,115.2],[34.98,113.4],[35.23,108.0],[35.48,109.8],[35.73,113.4],[35.98,109.8],[36.23,102.6],[36.48,91.8],[36.73,82.8],[36.98,86.4],[37.23,102.6],[37.48,117.0],[37.73,118.8],[37.98,108.0],[38.23,97.2],[38.48,91.8],[38.73,86.4],[38.98,86.4],[39.23,88.2],[39.48,90.0],[39.73,93.6],[39.98,95.4],[40.23,97.2],[40.48,100.8],[40.73,100.8],[40.98,108.0],[41.23,120.6],[41.48,124.2],[41.73,109.8],[41.98,97.2],[42.23,106.2],[42.48,127.8],[42.73,131.4],[42.98,120.6],[43.23,106.2],[43.48,93.6],[43.73,88.2],[43.98,93.6],[44.23,113.4],[44.48,127.8],[44.73,126.0],[44.98,113.4],[45.23,106.2],[45.48,106.2],[45.73,102.6],[45.98,100.8],[46.23,97.2],[46.48,91.8],[46.73,90.0],[46.98,88.2],[47.23,90.0],[47.48,91.8],[47.73,93.6],[47.98,93.6]];
 
-            const hour = (i * dt / 60) % 24;
-            // Meal effects
-            let mealEffect = 0;
-            if (hour > 7 && hour < 9) mealEffect = 15 * Math.sin((hour - 7) * Math.PI / 2);
-            if (hour > 12 && hour < 14) mealEffect = 20 * Math.sin((hour - 12) * Math.PI / 2);
-            if (hour > 18 && hour < 20.5) mealEffect = 25 * Math.sin((hour - 18) * Math.PI / 1.5);
+        // Meal events with foods, calories, and carbs
+        var meals = [{"h":9.82,"label":"Oatmeal, Almonds, Raisins, Yogurt, Walnuts","cal":560,"carbs":47.1},{"h":11.88,"label":"Watermelon","cal":99,"carbs":21.3},{"h":13.5,"label":"Bread, Tuna, Hummus","cal":611,"carbs":31.6},{"h":17.4,"label":"Apple","cal":95,"carbs":25.1},{"h":21.03,"label":"Pasta, Cheese","cal":898,"carbs":43.6},{"h":34.07,"label":"Oatmeal, Almonds, Raisins, Yogurt, Walnuts","cal":560,"carbs":47.1},{"h":35.07,"label":"Bread, Butter, Banana","cal":406,"carbs":50.5},{"h":37.37,"label":"Tuna","cal":297,"carbs":0.0},{"h":41.0,"label":"Watermelon","cal":79,"carbs":17.1},{"h":42.13,"label":"Grapes","cal":109,"carbs":24.4},{"h":43.8,"label":"Quinoa, Broccoli, Tomatoes","cal":414,"carbs":40.0},{"h":44.93,"label":"Apple, Grapes, Milk","cal":340,"carbs":53.8}];
 
-            // Dawn effect
-            let dawnEffect = 0;
-            if (hour > 4 && hour < 7) dawnEffect = 8 * Math.sin((hour - 4) * Math.PI / 3);
+        // Convert hours to datetime for Plotly
+        var baseDate = new Date(2020, 6, 2, 0, 0, 0); // Jul 2
+        var times = cgm.map(function(p) {
+          return new Date(baseDate.getTime() + p[0] * 3600000);
+        });
+        var glucose = cgm.map(function(p) { return p[1]; });
 
-            glucose = glucose * 0.95 + baseGlucose * 0.05 + mealEffect * 0.1 + dawnEffect * 0.05 + rand * volatility;
-            glucose = Math.max(55, Math.min(200, glucose));
-
-            const time = new Date(2025, 0, 1, 0, i * dt);
-            points.push({ x: time, y: Math.round(glucose * 10) / 10 });
-          }
-          return points;
-        }
-
-        const observed = generateGlucoseTrace(24, 95, 8, 42);
-        const contextEnd = Math.floor(observed.length * 0.6);
-        const context = observed.slice(0, contextEnd);
-        const future = observed.slice(contextEnd - 1);
-        const generated = generateGlucoseTrace(24, 95, 7, 99).slice(contextEnd - 1);
-
-        // Align generated to start from same point
-        const offset = future[0].y - generated[0].y;
-        generated.forEach(p => p.y += offset);
-
-        const traces = [
-          {
-            x: context.map(p => p.x),
-            y: context.map(p => p.y),
-            name: 'Context (Observed)',
-            line: { color: '#1B2A4A', width: 2 },
-            type: 'scatter'
-          },
-          {
-            x: future.map(p => p.x),
-            y: future.map(p => p.y),
-            name: 'Future (Observed)',
-            line: { color: '#64748B', width: 2, dash: 'dot' },
-            type: 'scatter'
-          },
-          {
-            x: generated.map(p => p.x),
-            y: generated.map(p => p.y),
-            name: 'GluFormer Prediction',
-            line: { color: '#E63946', width: 2.5 },
-            type: 'scatter'
-          }
-        ];
-
-        // Add meal markers
-        const mealTimes = [
-          { time: new Date(2025, 0, 1, 8, 0), label: 'Breakfast' },
-          { time: new Date(2025, 0, 1, 12, 30), label: 'Lunch' },
-          { time: new Date(2025, 0, 1, 19, 0), label: 'Dinner' },
-        ];
-
-        const shapes = [{
-          type: 'line',
-          x0: context[context.length - 1].x,
-          x1: context[context.length - 1].x,
-          y0: 55,
-          y1: 160,
-          line: { color: '#94A3B8', width: 1.5, dash: 'dash' }
+        // Time-in-range shading (70-180 mg/dL normal range)
+        var shapes = [{
+          type: 'rect', xref: 'paper', x0: 0, x1: 1,
+          y0: 70, y1: 140,
+          fillcolor: 'rgba(42, 157, 143, 0.06)',
+          line: { width: 0 }
         }];
 
-        const annotations = [{
-          x: context[context.length - 1].x,
-          y: 158,
-          text: 'Prediction starts',
-          showarrow: false,
-          font: { size: 10, color: '#64748B' }
+        var annotations = [{
+          x: times[times.length - 1], y: 139, text: 'Normal range',
+          showarrow: false, font: { size: 8, color: '#2A9D8F' },
+          xanchor: 'right'
         }];
 
-        mealTimes.forEach(meal => {
+        // Day separator
+        var day2Start = new Date(2020, 6, 3, 0, 0, 0);
+        shapes.push({
+          type: 'line', x0: day2Start, x1: day2Start,
+          y0: 60, y1: 145,
+          line: { color: '#CBD5E1', width: 1, dash: 'dash' }
+        });
+        annotations.push({
+          x: new Date(2020, 6, 2, 12, 0), y: 145, text: 'Day 1',
+          showarrow: false, font: { size: 9, color: '#94A3B8' }
+        });
+        annotations.push({
+          x: new Date(2020, 6, 3, 12, 0), y: 145, text: 'Day 2',
+          showarrow: false, font: { size: 9, color: '#94A3B8' }
+        });
+
+        // Meal markers
+        meals.forEach(function(meal) {
+          var mealTime = new Date(baseDate.getTime() + meal.h * 3600000);
           shapes.push({
-            type: 'line',
-            x0: meal.time, x1: meal.time,
-            y0: 55, y1: 65,
-            line: { color: '#2A9D8F', width: 2 }
+            type: 'line', x0: mealTime, x1: mealTime,
+            y0: 60, y1: 68,
+            line: { color: '#E63946', width: 2.5 }
           });
           annotations.push({
-            x: meal.time, y: 60,
-            text: meal.label,
+            x: mealTime, y: 62,
+            text: meal.label.split(',')[0],
             showarrow: false,
-            font: { size: 9, color: '#2A9D8F' },
-            textangle: 0
+            font: { size: 7, color: '#E63946' },
+            textangle: -45
           });
         });
 
-        const layout = {
-          margin: { t: 10, r: 15, b: 40, l: 45 },
+        var traces = [{
+          x: times, y: glucose,
+          name: 'Glucose (mg/dL)',
+          line: { color: '#1B2A4A', width: 2 },
+          type: 'scatter',
+          hovertemplate: '%{y:.0f} mg/dL<extra></extra>'
+        }];
+
+        var layout = {
+          margin: { t: 10, r: 15, b: 50, l: 45 },
           xaxis: {
-            title: 'Time of Day',
+            title: 'Time',
             tickformat: '%H:%M',
-            gridcolor: '#E2E8F0'
+            gridcolor: '#E2E8F0',
+            dtick: 6 * 3600000
           },
           yaxis: {
             title: 'Glucose (mg/dL)',
-            range: [55, 170],
+            range: [55, 150],
             gridcolor: '#E2E8F0'
           },
-          legend: {
-            orientation: 'h',
-            y: -0.25,
-            x: 0.5,
-            xanchor: 'center',
-            font: { size: 10 }
-          },
+          legend: { orientation: 'h', y: -0.3, x: 0.5, xanchor: 'center', font: { size: 10 } },
           plot_bgcolor: '#FAFBFC',
           paper_bgcolor: 'transparent',
           shapes: shapes,
@@ -356,12 +292,7 @@
           hovermode: 'x unified'
         };
 
-        const config = {
-          responsive: true,
-          displayModeBar: false
-        };
-
-        Plotly.newPlot('glucose-explorer', traces, layout, config);
+        Plotly.newPlot('glucose-explorer', traces, layout, { responsive: true, displayModeBar: false });
       });
     </script>
   </body>

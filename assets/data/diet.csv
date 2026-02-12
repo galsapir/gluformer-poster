@@ -1,0 +1,216 @@
+collection_timestamp,food_id,collection_date,short_food_name,product_name,food_category,weight_g,calories_kcal,carbohydrate_g,lipid_g,protein_g,sodium_mg,alcohol_g,dietary_fiber_g,eaten_in_restaurant,local_timestamp,timezone
+2020-06-21 16:06:00+03:00,1006969,2020-06-21,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",56.00,78.31,12.17,1.30,2.80,37.15,0.00,1.49,False,2020-06-21 16:06:00,asia/jerusalem
+2020-06-21 16:06:00+03:00,1008530,2020-06-21,Hummus Salad,Rich hummus in tahini with the addition of great grains,Pulses and products,80.00,215.20,9.44,16.80,6.56,377.60,,0.00,False,2020-06-21 16:06:00,asia/jerusalem
+2020-06-21 16:06:00+03:00,1011068,2020-06-21,Meatballs,Beef meatballs baked without oil,"Beef, veal, lamb, and other meat products",180.00,311.09,16.13,15.44,24.73,1164.55,0.00,2.39,False,2020-06-21 16:06:00,asia/jerusalem
+2020-06-21 19:28:00+03:00,1012524,2020-06-21,Banana,Banana,Fruits,128.00,113.92,25.91,0.42,1.40,1.28,0.00,3.33,False,2020-06-21 19:28:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1007483,2020-06-21,Bread,Italian bread,Bread,60.00,162.60,28.38,2.10,5.28,367.80,0.00,1.62,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1007874,2020-06-21,Omelette,A fried egg or omelette without oil,Eggs and their products,100.00,161.93,0.82,10.77,14.22,314.80,0.00,0.00,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1008926,2020-06-21,Pepper,Red pepper,Vegetables,74.00,22.94,2.91,0.22,0.73,2.96,0.00,1.55,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1009965,2020-06-21,Cherry tomatoes,Cherry tomatoes,Vegetables,170.00,24.00,4.00,0.00,2.01,0.00,0.00,2.00,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1011295,2020-06-21,Butter,butter,Oils and fats,21.00,155.82,0.10,17.22,0.10,2.10,0.00,0.00,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-21 21:07:00+03:00,1012989,2020-06-21,Egg,Hard-boiled egg,Eggs and their products,49.00,75.46,0.55,5.18,6.14,136.22,0.00,0.00,False,2020-06-21 21:07:00,asia/jerusalem
+2020-06-22 10:26:00+03:00,1006938,2020-06-22,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-06-22 10:26:00,asia/jerusalem
+2020-06-22 10:26:00+03:00,1008624,2020-06-22,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-06-22 10:26:00,asia/jerusalem
+2020-06-22 10:26:00+03:00,1009743,2020-06-22,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-06-22 10:26:00,asia/jerusalem
+2020-06-22 10:26:00+03:00,1009983,2020-06-22,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-06-22 10:26:00,asia/jerusalem
+2020-06-22 10:26:00+03:00,1012082,2020-06-22,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-06-22 10:26:00,asia/jerusalem
+2020-06-22 14:00:00+03:00,1006946,2020-06-22,,A vegetarian hamburger of the classic series Tivol,Industrialized vegetarian food ready to eat,196.00,360.64,6.86,19.60,39.20,799.68,,13.72,False,2020-06-22 14:00:00,asia/jerusalem
+2020-06-22 14:00:00+03:00,1008012,2020-06-22,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,130.00,111.80,0.00,1.25,25.27,321.10,0.00,0.00,False,2020-06-22 14:00:00,asia/jerusalem
+2020-06-22 14:00:00+03:00,1010712,2020-06-22,Cottage cheese,Cottage cheese 5% Strauss,"milk, cream cheese and yogurts",80.00,80.00,2.16,4.00,8.88,304.00,,0.00,False,2020-06-22 14:00:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1007483,2020-06-22,Bread,Italian bread,Bread,40.00,108.40,18.92,1.40,3.52,245.20,0.00,1.08,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1007938,2020-06-22,Butter,Tnuva Tara butter,Oils and fats,10.00,74.20,0.05,8.20,0.05,1.00,0.00,0.00,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1009965,2020-06-22,Cherry tomatoes,Cherry tomatoes,Vegetables,170.00,24.00,4.00,0.00,2.01,0.00,0.00,2.00,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1010437,2020-06-22,Hummus Salad,Hummus restaurants,Pulses and products,60.00,196.20,11.22,14.04,0.30,393.60,,6.60,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1010893,2020-06-22,Mozzarella Cheese,Mozzarella cheese 18% fat,Hard cheese,110.00,324.50,0.61,23.65,26.95,522.50,,,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1011413,2020-06-22,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",120.00,151.20,1.44,10.80,12.00,444.00,,0.00,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1011699,2020-06-22,Heavy cream,Sour cream 15% fat,"milk, cream cheese and yogurts",18.00,28.62,0.59,2.70,0.49,8.10,0.00,0.00,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-22 21:15:00+03:00,1012938,2020-06-22,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-06-22 21:15:00,asia/jerusalem
+2020-06-23 10:15:00+03:00,1007483,2020-06-23,Bread,Italian bread,Bread,60.00,162.60,28.38,2.10,5.28,367.80,0.00,1.62,False,2020-06-23 10:15:00,asia/jerusalem
+2020-06-23 10:15:00+03:00,1007938,2020-06-23,Butter,Tnuva Tara butter,Oils and fats,25.00,185.50,0.12,20.50,0.12,2.50,0.00,0.00,False,2020-06-23 10:15:00,asia/jerusalem
+2020-06-23 10:15:00+03:00,1009570,2020-06-23,Yeast,Brewer,Others ,15.00,46.00,3.50,0.00,8.00,35.00,,3.00,False,2020-06-23 10:15:00,asia/jerusalem
+2020-06-23 10:15:00+03:00,1012989,2020-06-23,Egg,Hard-boiled egg,Eggs and their products,49.00,75.46,0.55,5.18,6.14,136.22,0.00,0.00,False,2020-06-23 10:15:00,asia/jerusalem
+2020-06-23 11:29:00+03:00,1012082,2020-06-23,Walnuts,Walnuts,"Nuts, seeds, and products",25.00,163.50,1.75,16.30,3.81,0.50,0.00,1.68,False,2020-06-23 11:29:00,asia/jerusalem
+2020-06-23 15:47:00+03:00,1008012,2020-06-23,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,130.00,111.80,0.00,1.25,25.27,321.10,0.00,0.00,False,2020-06-23 15:47:00,asia/jerusalem
+2020-06-23 15:47:00+03:00,1010893,2020-06-23,Mozzarella Cheese,Mozzarella cheese 18% fat,Hard cheese,110.00,324.50,0.61,23.65,26.95,522.50,,,False,2020-06-23 15:47:00,asia/jerusalem
+2020-06-23 15:47:00+03:00,1011699,2020-06-23,Heavy cream,Sour cream 15% fat,"milk, cream cheese and yogurts",18.00,28.62,0.59,2.70,0.49,8.10,0.00,0.00,False,2020-06-23 15:47:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1009965,2020-06-23,Cherry tomatoes,Cherry tomatoes,Vegetables,204.00,28.80,4.79,0.00,2.41,0.00,0.00,2.40,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1010437,2020-06-23,Hummus Salad,Hummus restaurants,Pulses and products,90.00,294.30,16.83,21.06,0.45,590.40,,9.90,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1011295,2020-06-23,Butter,butter,Oils and fats,28.00,207.76,0.14,22.96,0.14,2.80,0.00,0.00,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1011478,2020-06-23,Light Yellow Cheese,Yellow cheese 9% fat Light Emek,Hard cheese,40.00,81.20,3.80,3.60,8.40,500.00,0.00,0.08,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1012938,2020-06-23,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-23 20:03:00+03:00,1013302,2020-06-23,Pita,Pita,Bread,100.00,275.00,55.70,1.20,9.10,536.00,,2.20,False,2020-06-23 20:03:00,asia/jerusalem
+2020-06-24 11:47:00+03:00,1007928,2020-06-24,,Plant-based hamburger with reduced fat/99 tevol,Industrialized vegetarian food ready to eat,75.00,99.00,2.10,3.38,15.00,375.00,0.00,4.12,False,2020-06-24 11:47:00,asia/jerusalem
+2020-06-24 14:00:00+03:00,1007297,2020-06-24,Fish balls,Fish patties cooked in Segev tomato sauce,Fish and seafood,150.00,184.50,16.50,7.50,15.00,832.50,0.00,2.74,True,2020-06-24 14:00:00,asia/jerusalem
+2020-06-24 14:00:00+03:00,1012270,2020-06-24,Mayonnaise,Spicy mayonnaise,Soups and sauces,3.00,20.60,0.20,2.20,0.00,20.01,,0.00,True,2020-06-24 14:00:00,asia/jerusalem
+2020-06-24 14:00:00+03:00,1012520,2020-06-24,Beer,All kinds of beer,Alcoholic Drinks,330.00,143.02,11.71,0.00,1.52,13.20,12.87,0.00,True,2020-06-24 14:00:00,asia/jerusalem
+2020-06-24 14:00:00+03:00,1012956,2020-06-24,Baguette,Bonjour baguette bread,Bread,6.00,16.14,3.36,0.06,0.54,32.34,0.00,0.18,True,2020-06-24 14:00:00,asia/jerusalem
+2020-06-24 14:00:00+03:00,1013735,2020-06-24,Lettuce,Salanova lettuce,Vegetables,25.00,6.00,0.25,,1.25,8.75,,0.25,True,2020-06-24 14:00:00,asia/jerusalem
+2020-06-24 17:33:00+03:00,1011018,2020-06-24,Raspberries,Frozen red raspberry,Fruits,15.00,7.80,0.82,0.10,0.18,0.15,0.00,0.97,False,2020-06-24 17:33:00,asia/jerusalem
+2020-06-24 18:54:00+03:00,1012524,2020-06-24,Banana,Banana,Fruits,106.00,94.34,21.45,0.35,1.16,1.06,0.00,2.76,False,2020-06-24 18:54:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1006969,2020-06-24,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",70.00,97.89,15.22,1.62,3.50,46.44,0.00,1.86,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1007830,2020-06-24,White Cheese,White cheese 5% fat,"milk, cream cheese and yogurts",200.00,196.00,8.60,10.00,18.00,420.00,0.00,0.00,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1008580,2020-06-24,Spelt crackers,Spelled crisps,Bread,15.00,53.85,12.00,0.48,1.88,91.20,,1.50,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1009965,2020-06-24,Cherry tomatoes,Cherry tomatoes,Vegetables,340.00,48.01,7.99,0.00,4.01,0.00,0.00,4.00,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1011295,2020-06-24,Butter,butter,Oils and fats,15.00,111.30,0.07,12.30,0.07,1.50,0.00,0.00,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1012938,2020-06-24,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-24 21:10:00+03:00,1012976,2020-06-24,Olive oil,Olive oil,Oils and fats,13.00,114.92,0.00,13.00,0.00,0.26,0.00,0.00,False,2020-06-24 21:10:00,asia/jerusalem
+2020-06-25 09:00:00+03:00,1006938,2020-06-25,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-06-25 09:00:00,asia/jerusalem
+2020-06-25 09:00:00+03:00,1008624,2020-06-25,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-06-25 09:00:00,asia/jerusalem
+2020-06-25 09:00:00+03:00,1009743,2020-06-25,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-06-25 09:00:00,asia/jerusalem
+2020-06-25 09:00:00+03:00,1009983,2020-06-25,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-06-25 09:00:00,asia/jerusalem
+2020-06-25 09:00:00+03:00,1012082,2020-06-25,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-06-25 09:00:00,asia/jerusalem
+2020-06-25 10:47:00+03:00,1006875,2020-06-25,Apple,Apple,Fruits,182.00,94.64,25.13,0.31,0.47,1.82,0.00,4.37,False,2020-06-25 10:47:00,asia/jerusalem
+2020-06-25 12:20:00+03:00,1011295,2020-06-25,Butter,butter,Oils and fats,5.00,37.10,0.03,4.10,0.03,0.50,0.00,0.00,False,2020-06-25 12:20:00,asia/jerusalem
+2020-06-25 12:20:00+03:00,1011413,2020-06-25,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",125.00,157.50,1.50,11.25,12.50,462.50,,0.00,False,2020-06-25 12:20:00,asia/jerusalem
+2020-06-25 12:20:00+03:00,1013302,2020-06-25,Pita,Pita,Bread,50.00,137.50,27.85,0.60,4.55,268.00,,1.10,False,2020-06-25 12:20:00,asia/jerusalem
+2020-06-25 14:12:00+03:00,1007777,2020-06-25,Pasta,Freshly cooked pasta,"Pasta, Grains and Side dishes",200.00,259.54,49.86,2.10,10.30,12.00,,0.00,False,2020-06-25 14:12:00,asia/jerusalem
+2020-06-25 14:12:00+03:00,1008012,2020-06-25,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,130.00,111.80,0.00,1.25,25.27,321.10,0.00,0.00,False,2020-06-25 14:12:00,asia/jerusalem
+2020-06-25 14:12:00+03:00,1009407,2020-06-25,Yellow Cheese,Yellow cheese 32% fat Tnuva Cheddar,Hard cheese,20.00,79.20,0.10,6.40,5.30,118.00,0.00,0.00,False,2020-06-25 14:12:00,asia/jerusalem
+2020-06-25 14:12:00+03:00,1009721,2020-06-25,,Pepper salad with olive oil and vinegar,Vegetables,10.00,6.30,0.74,0.31,0.14,31.56,0.00,0.12,False,2020-06-25 14:12:00,asia/jerusalem
+2020-06-25 14:12:00+03:00,1012976,2020-06-25,Olive oil,Olive oil,Oils and fats,3.00,26.52,0.00,3.00,0.00,0.06,0.00,0.00,False,2020-06-25 14:12:00,asia/jerusalem
+2020-06-25 19:24:00+03:00,1012377,2020-06-25,Pizza,Thin crust pizza with olives,Bread,150.00,421.20,44.77,18.15,16.44,707.91,,3.26,False,2020-06-25 19:24:00,asia/jerusalem
+2020-06-25 21:27:00+03:00,1009933,2020-06-25,Smoothies,Fruit milkshake based on milk 3% fat,sweet milk products,240.00,150.31,23.04,3.86,4.63,61.06,0.00,2.97,False,2020-06-25 21:27:00,asia/jerusalem
+2020-06-26 09:52:00+03:00,1009983,2020-06-26,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",200.00,132.00,9.80,6.00,9.80,180.00,0.00,1.80,False,2020-06-26 09:52:00,asia/jerusalem
+2020-06-26 09:52:00+03:00,1013465,2020-06-26,Granola,Oat granola without gluten and without sugar FREE,Cereals,18.00,68.40,10.01,2.56,1.33,21.60,,0.97,False,2020-06-26 09:52:00,asia/jerusalem
+2020-06-26 13:55:00+03:00,1006969,2020-06-26,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",98.00,137.04,21.31,2.27,4.90,65.01,0.00,2.61,False,2020-06-26 13:55:00,asia/jerusalem
+2020-06-26 13:55:00+03:00,1007830,2020-06-26,White Cheese,White cheese 5% fat,"milk, cream cheese and yogurts",160.00,156.80,6.88,8.00,14.40,336.00,0.00,0.00,False,2020-06-26 13:55:00,asia/jerusalem
+2020-06-26 13:55:00+03:00,1008525,2020-06-26,Vegetable Soup,vegetable soup,Vegetables,250.00,73.35,13.00,0.75,2.00,800.00,,1.65,False,2020-06-26 13:55:00,asia/jerusalem
+2020-06-26 15:50:00+03:00,1006875,2020-06-26,Apple,Apple,Fruits,182.00,94.64,25.13,0.31,0.47,1.82,0.00,4.37,False,2020-06-26 15:50:00,asia/jerusalem
+2020-06-26 16:43:00+03:00,1006859,2020-06-26,Mozzarella Cheese,Mozzarella cheese 22% tare fat,Hard cheese,35.00,102.90,0.00,7.70,8.40,238.00,0.00,0.00,False,2020-06-26 16:43:00,asia/jerusalem
+2020-06-26 16:43:00+03:00,1008580,2020-06-26,Spelt crackers,Spelled crisps,Bread,10.00,35.90,8.00,0.32,1.25,60.80,,1.00,False,2020-06-26 16:43:00,asia/jerusalem
+2020-06-26 16:43:00+03:00,1011295,2020-06-26,Butter,butter,Oils and fats,5.00,37.10,0.03,4.10,0.03,0.50,0.00,0.00,False,2020-06-26 16:43:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1007054,2020-06-26,Broccoli,broccoli,Vegetables,30.00,10.20,1.21,0.11,0.85,9.90,0.00,0.78,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1009965,2020-06-26,Cherry tomatoes,Cherry tomatoes,Vegetables,187.00,26.40,4.39,0.00,2.21,0.00,0.00,2.20,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1010282,2020-06-26,Cauliflower,Baked cauliflower,Vegetables,15.00,14.38,0.70,1.00,0.28,83.70,,0.34,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1011481,2020-06-26,Salmon,Baked salmon with lemon juice and olive oil,Fish and seafood,124.00,223.44,0.40,10.22,30.73,344.62,0.00,0.02,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1012377,2020-06-26,Pizza,Thin crust pizza with olives,Bread,60.00,168.48,17.91,7.26,6.58,283.16,,1.31,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-26 20:02:00+03:00,1013242,2020-06-26,Wine,White wine,Alcoholic Drinks,60.00,49.20,1.56,0.00,0.04,3.00,6.18,0.00,False,2020-06-26 20:02:00,asia/jerusalem
+2020-06-27 10:15:00+03:00,1006938,2020-06-27,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-06-27 10:15:00,asia/jerusalem
+2020-06-27 10:15:00+03:00,1008624,2020-06-27,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-06-27 10:15:00,asia/jerusalem
+2020-06-27 10:15:00+03:00,1009743,2020-06-27,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-06-27 10:15:00,asia/jerusalem
+2020-06-27 10:15:00+03:00,1009983,2020-06-27,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-06-27 10:15:00,asia/jerusalem
+2020-06-27 10:15:00+03:00,1012082,2020-06-27,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-06-27 10:15:00,asia/jerusalem
+2020-06-27 11:31:00+03:00,1007828,2020-06-27,Bread,Applies,Bread,102.00,258.06,51.00,2.14,8.16,442.68,0.00,3.37,False,2020-06-27 11:31:00,asia/jerusalem
+2020-06-27 11:31:00+03:00,1007830,2020-06-27,White Cheese,White cheese 5% fat,"milk, cream cheese and yogurts",80.00,78.40,3.44,4.00,7.20,168.00,0.00,0.00,False,2020-06-27 11:31:00,asia/jerusalem
+2020-06-27 11:31:00+03:00,1011295,2020-06-27,Butter,butter,Oils and fats,22.00,163.24,0.11,18.04,0.11,2.20,0.00,0.00,False,2020-06-27 11:31:00,asia/jerusalem
+2020-06-27 15:30:00+03:00,1007054,2020-06-27,Broccoli,broccoli,Vegetables,30.00,10.20,1.21,0.11,0.85,9.90,0.00,0.78,False,2020-06-27 15:30:00,asia/jerusalem
+2020-06-27 15:30:00+03:00,1009965,2020-06-27,Cherry tomatoes,Cherry tomatoes,Vegetables,187.00,26.40,4.39,0.00,2.21,0.00,0.00,2.20,False,2020-06-27 15:30:00,asia/jerusalem
+2020-06-27 15:30:00+03:00,1011224,2020-06-27,,Brussels sprouts,Vegetables,152.00,65.36,7.83,0.46,5.14,38.00,0.00,5.78,False,2020-06-27 15:30:00,asia/jerusalem
+2020-06-27 15:30:00+03:00,1011481,2020-06-27,Salmon,Baked salmon with lemon juice and olive oil,Fish and seafood,152.00,273.89,0.49,12.52,37.67,422.44,0.00,0.02,False,2020-06-27 15:30:00,asia/jerusalem
+2020-06-27 17:00:00+03:00,1010973,2020-06-27,Watermelon,watermelon,Fruits,400.00,157.72,34.04,0.60,2.44,4.00,0.00,1.60,False,2020-06-27 17:00:00,asia/jerusalem
+2020-06-27 20:23:00+03:00,1012377,2020-06-27,Pizza,Thin crust pizza with olives,Bread,300.00,842.40,89.55,36.30,32.88,1415.82,,6.53,False,2020-06-27 20:23:00,asia/jerusalem
+2020-06-27 20:23:00+03:00,1012938,2020-06-27,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-06-27 20:23:00,asia/jerusalem
+2020-06-28 12:45:00+03:00,1006969,2020-06-28,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",84.00,117.47,18.26,1.95,4.20,55.73,0.00,2.23,False,2020-06-28 12:45:00,asia/jerusalem
+2020-06-28 12:45:00+03:00,1008525,2020-06-28,Vegetable Soup,vegetable soup,Vegetables,125.00,36.67,6.50,0.38,1.00,400.00,,0.82,False,2020-06-28 12:45:00,asia/jerusalem
+2020-06-28 12:45:00+03:00,1009721,2020-06-28,,Pepper salad with olive oil and vinegar,Vegetables,69.00,43.50,5.13,2.15,0.93,217.79,0.00,0.84,False,2020-06-28 12:45:00,asia/jerusalem
+2020-06-28 12:45:00+03:00,1009965,2020-06-28,Cherry tomatoes,Cherry tomatoes,Vegetables,170.00,24.00,4.00,0.00,2.01,0.00,0.00,2.00,False,2020-06-28 12:45:00,asia/jerusalem
+2020-06-28 12:45:00+03:00,1013208,2020-06-28,Soup mandels,Soup almonds without Asam food coloring,sweets,45.00,236.00,29.35,11.34,4.14,283.50,0.00,0.45,False,2020-06-28 12:45:00,asia/jerusalem
+2020-06-28 17:22:00+03:00,1006875,2020-06-28,Apple,Apple,Fruits,182.00,94.64,25.13,0.31,0.47,1.82,0.00,4.37,False,2020-06-28 17:22:00,asia/jerusalem
+2020-06-28 17:22:00+03:00,1008012,2020-06-28,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,80.00,68.80,0.00,0.77,15.55,197.60,0.00,0.00,False,2020-06-28 17:22:00,asia/jerusalem
+2020-06-28 17:22:00+03:00,1013197,2020-06-28,Peach,peach,Fruits,145.00,63.87,11.66,0.36,1.32,0.00,0.00,2.17,False,2020-06-28 17:22:00,asia/jerusalem
+2020-06-28 20:30:00+03:00,1006969,2020-06-28,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",140.00,195.78,30.44,3.25,7.00,92.88,0.00,3.72,False,2020-06-28 20:30:00,asia/jerusalem
+2020-06-28 20:30:00+03:00,1007828,2020-06-28,Bread,Applies,Bread,102.00,258.06,51.00,2.14,8.16,442.68,0.00,3.37,False,2020-06-28 20:30:00,asia/jerusalem
+2020-06-28 20:30:00+03:00,1011295,2020-06-28,Butter,butter,Oils and fats,25.00,185.50,0.12,20.50,0.12,2.50,0.00,0.00,False,2020-06-28 20:30:00,asia/jerusalem
+2020-06-28 20:30:00+03:00,1012675,2020-06-28,Pesto,Pesto sauce without parmesan,Soups and sauces,60.00,200.66,1.57,21.10,2.43,131.41,0.00,0.92,False,2020-06-28 20:30:00,asia/jerusalem
+2020-06-28 20:30:00+03:00,1012938,2020-06-28,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-06-28 20:30:00,asia/jerusalem
+2020-06-29 10:00:00+03:00,1006938,2020-06-29,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-06-29 10:00:00,asia/jerusalem
+2020-06-29 10:00:00+03:00,1008624,2020-06-29,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-06-29 10:00:00,asia/jerusalem
+2020-06-29 10:00:00+03:00,1009743,2020-06-29,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-06-29 10:00:00,asia/jerusalem
+2020-06-29 10:00:00+03:00,1009983,2020-06-29,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-06-29 10:00:00,asia/jerusalem
+2020-06-29 10:00:00+03:00,1012082,2020-06-29,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-06-29 10:00:00,asia/jerusalem
+2020-06-29 14:40:00+03:00,1008012,2020-06-29,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,40.00,34.40,0.00,0.38,7.78,98.80,0.00,0.00,False,2020-06-29 14:40:00,asia/jerusalem
+2020-06-29 14:40:00+03:00,1011295,2020-06-29,Butter,butter,Oils and fats,20.00,148.40,0.10,16.40,0.10,2.00,0.00,0.00,False,2020-06-29 14:40:00,asia/jerusalem
+2020-06-29 14:40:00+03:00,1011413,2020-06-29,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",125.00,157.50,1.50,11.25,12.50,462.50,,0.00,False,2020-06-29 14:40:00,asia/jerusalem
+2020-06-29 14:40:00+03:00,1013121,2020-06-29,Baguette,Toasted baguette bread,Bread,162.00,469.80,85.86,4.37,21.22,897.63,,5.35,False,2020-06-29 14:40:00,asia/jerusalem
+2020-06-29 19:59:00+03:00,1006859,2020-06-29,Mozzarella Cheese,Mozzarella cheese 22% tare fat,Hard cheese,15.00,44.10,0.00,3.30,3.60,102.00,0.00,0.00,False,2020-06-29 19:59:00,asia/jerusalem
+2020-06-29 19:59:00+03:00,1008926,2020-06-29,Pepper,Red pepper,Vegetables,74.00,22.94,2.91,0.22,0.73,2.96,0.00,1.55,False,2020-06-29 19:59:00,asia/jerusalem
+2020-06-29 19:59:00+03:00,1009544,2020-06-29,Eggplant Salad,Eggplant salad roasted in tahini,Vegetables,48.00,38.81,1.60,2.48,1.45,125.56,0.00,1.80,False,2020-06-29 19:59:00,asia/jerusalem
+2020-06-29 19:59:00+03:00,1010437,2020-06-29,Hummus Salad,Hummus restaurants,Pulses and products,60.00,196.20,11.22,14.04,0.30,393.60,,6.60,False,2020-06-29 19:59:00,asia/jerusalem
+2020-06-29 19:59:00+03:00,1013121,2020-06-29,Baguette,Toasted baguette bread,Bread,162.00,469.80,85.86,4.37,21.22,897.63,,5.35,False,2020-06-29 19:59:00,asia/jerusalem
+2020-06-30 10:30:00+03:00,1009983,2020-06-30,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",200.00,132.00,9.80,6.00,9.80,180.00,0.00,1.80,False,2020-06-30 10:30:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1007118,2020-06-30,Hummus,Hummus grains cooked with salt,Pulses and products,21.00,37.80,4.49,0.63,2.00,51.03,0.00,1.81,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1007483,2020-06-30,Bread,Italian bread,Bread,40.00,108.40,18.92,1.40,3.52,245.20,0.00,1.08,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1007828,2020-06-30,Bread,Applies,Bread,68.00,172.04,34.00,1.43,5.44,295.12,0.00,2.24,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1007830,2020-06-30,White Cheese,White cheese 5% fat,"milk, cream cheese and yogurts",80.00,78.40,3.44,4.00,7.20,168.00,0.00,0.00,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1010437,2020-06-30,Hummus Salad,Hummus restaurants,Pulses and products,60.00,196.20,11.22,14.04,0.30,393.60,,6.60,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 14:45:00+03:00,1011295,2020-06-30,Butter,butter,Oils and fats,5.00,37.10,0.03,4.10,0.03,0.50,0.00,0.00,False,2020-06-30 14:45:00,asia/jerusalem
+2020-06-30 19:41:00+03:00,1011413,2020-06-30,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",125.00,157.50,1.50,11.25,12.50,462.50,,0.00,False,2020-06-30 19:41:00,asia/jerusalem
+2020-06-30 20:30:00+03:00,1011201,2020-06-30,Chicken,Chicken curry,Poultry and its products,50.00,77.00,7.69,1.60,7.37,182.50,,0.65,True,2020-06-30 20:30:00,asia/jerusalem
+2020-06-30 20:30:00+03:00,1012726,2020-06-30,Egg noodles,Egg noodles,"Pasta, Grains and Side dishes",150.00,583.50,119.92,3.25,18.55,585.00,,2.19,True,2020-06-30 20:30:00,asia/jerusalem
+2020-06-30 22:26:00+03:00,1013197,2020-06-30,Peach,peach,Fruits,290.00,127.75,23.32,0.72,2.64,0.00,0.00,4.35,False,2020-06-30 22:26:00,asia/jerusalem
+2020-06-30 22:26:00+03:00,1013718,2020-06-30,Cherries,Cherries,Fruits,160.00,8.00,2.05,,0.14,,,0.27,False,2020-06-30 22:26:00,asia/jerusalem
+2020-07-01 09:42:00+03:00,1006938,2020-07-01,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-07-01 09:42:00,asia/jerusalem
+2020-07-01 09:42:00+03:00,1008624,2020-07-01,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-07-01 09:42:00,asia/jerusalem
+2020-07-01 09:42:00+03:00,1009743,2020-07-01,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-07-01 09:42:00,asia/jerusalem
+2020-07-01 09:42:00+03:00,1009983,2020-07-01,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-07-01 09:42:00,asia/jerusalem
+2020-07-01 09:42:00+03:00,1012082,2020-07-01,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-07-01 09:42:00,asia/jerusalem
+2020-07-01 13:22:00+03:00,1007483,2020-07-01,Bread,Italian bread,Bread,40.00,108.40,18.92,1.40,3.52,245.20,0.00,1.08,False,2020-07-01 13:22:00,asia/jerusalem
+2020-07-01 13:22:00+03:00,1008012,2020-07-01,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,130.00,111.80,0.00,1.25,25.27,321.10,0.00,0.00,False,2020-07-01 13:22:00,asia/jerusalem
+2020-07-01 13:22:00+03:00,1010437,2020-07-01,Hummus Salad,Hummus restaurants,Pulses and products,90.00,294.30,16.83,21.06,0.45,590.40,,9.90,False,2020-07-01 13:22:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1006840,2020-07-01,Omelette,Egg or omelette fried in olive oil,Eggs and their products,120.00,230.00,0.92,17.95,16.16,620.63,0.00,0.00,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1006859,2020-07-01,Mozzarella Cheese,Mozzarella cheese 22% tare fat,Hard cheese,80.00,235.20,0.00,17.60,19.20,544.00,0.00,0.00,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1007483,2020-07-01,Bread,Italian bread,Bread,60.00,162.60,28.38,2.10,5.28,367.80,0.00,1.62,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1008987,2020-07-01,Tomatoes,tomato,Vegetables,246.00,51.36,6.62,0.49,2.16,12.30,0.00,2.95,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1009407,2020-07-01,Yellow Cheese,Yellow cheese 32% fat Tnuva Cheddar,Hard cheese,20.00,79.20,0.10,6.40,5.30,118.00,0.00,0.00,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1011295,2020-07-01,Butter,butter,Oils and fats,25.00,185.50,0.12,20.50,0.12,2.50,0.00,0.00,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-01 19:20:00+03:00,1012976,2020-07-01,Olive oil,Olive oil,Oils and fats,3.00,26.52,0.00,3.00,0.00,0.06,0.00,0.00,False,2020-07-01 19:20:00,asia/jerusalem
+2020-07-02 09:49:00+03:00,1006938,2020-07-02,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-07-02 09:49:00,asia/jerusalem
+2020-07-02 09:49:00+03:00,1008624,2020-07-02,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-07-02 09:49:00,asia/jerusalem
+2020-07-02 09:49:00+03:00,1009743,2020-07-02,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-07-02 09:49:00,asia/jerusalem
+2020-07-02 09:49:00+03:00,1009983,2020-07-02,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-07-02 09:49:00,asia/jerusalem
+2020-07-02 09:49:00+03:00,1012082,2020-07-02,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-07-02 09:49:00,asia/jerusalem
+2020-07-02 11:53:00+03:00,1010973,2020-07-02,Watermelon,watermelon,Fruits,250.00,98.58,21.27,0.38,1.52,2.50,0.00,1.00,False,2020-07-02 11:53:00,asia/jerusalem
+2020-07-02 13:30:00+03:00,1007483,2020-07-02,Bread,Italian bread,Bread,40.00,108.40,18.92,1.40,3.52,245.20,0.00,1.08,False,2020-07-02 13:30:00,asia/jerusalem
+2020-07-02 13:30:00+03:00,1008012,2020-07-02,Canned Tuna Fish,Tuna fish preserved in water,Fish and seafood,130.00,111.80,0.00,1.25,25.27,321.10,0.00,0.00,False,2020-07-02 13:30:00,asia/jerusalem
+2020-07-02 13:30:00+03:00,1010437,2020-07-02,Hummus Salad,Hummus restaurants,Pulses and products,60.00,196.20,11.22,14.04,0.30,393.60,,6.60,False,2020-07-02 13:30:00,asia/jerusalem
+2020-07-02 13:30:00+03:00,1011295,2020-07-02,Butter,butter,Oils and fats,5.00,37.10,0.03,4.10,0.03,0.50,0.00,0.00,False,2020-07-02 13:30:00,asia/jerusalem
+2020-07-02 13:30:00+03:00,1011413,2020-07-02,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",125.00,157.50,1.50,11.25,12.50,462.50,,0.00,False,2020-07-02 13:30:00,asia/jerusalem
+2020-07-02 17:24:00+03:00,1006875,2020-07-02,Apple,Apple,Fruits,182.00,94.64,25.13,0.31,0.47,1.82,0.00,4.37,False,2020-07-02 17:24:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1007777,2020-07-02,Pasta,Freshly cooked pasta,"Pasta, Grains and Side dishes",100.00,129.77,24.93,1.05,5.15,6.00,,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1009407,2020-07-02,Yellow Cheese,Yellow cheese 32% fat Tnuva Cheddar,Hard cheese,25.00,99.00,0.12,8.00,6.62,147.50,0.00,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1009717,2020-07-02,,Pizza without cheese with red pepper,Bread,30.00,89.52,15.02,1.75,2.43,127.14,0.00,0.94,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1011413,2020-07-02,Cottage cheese,Cottage cheese 9% fat,"milk, cream cheese and yogurts",125.00,157.50,1.50,11.25,12.50,462.50,,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1012938,2020-07-02,Egg,A fried egg,Eggs and their products,138.00,270.48,1.15,20.48,19.20,285.66,,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1012976,2020-07-02,Olive oil,Olive oil,Oils and fats,3.00,26.52,0.00,3.00,0.00,0.06,0.00,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-02 21:02:00+03:00,1013180,2020-07-02,Parmesan cheese,Grated Parmesan cheese,Hard cheese,30.00,124.50,1.02,8.20,11.36,508.80,,0.00,False,2020-07-02 21:02:00,asia/jerusalem
+2020-07-03 10:04:00+03:00,1006938,2020-07-03,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-07-03 10:04:00,asia/jerusalem
+2020-07-03 10:04:00+03:00,1008624,2020-07-03,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-07-03 10:04:00,asia/jerusalem
+2020-07-03 10:04:00+03:00,1009743,2020-07-03,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-07-03 10:04:00,asia/jerusalem
+2020-07-03 10:04:00+03:00,1009983,2020-07-03,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-07-03 10:04:00,asia/jerusalem
+2020-07-03 10:04:00+03:00,1012082,2020-07-03,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-07-03 10:04:00,asia/jerusalem
+2020-07-03 11:04:00+03:00,1007483,2020-07-03,Bread,Italian bread,Bread,60.00,162.60,28.38,2.10,5.28,367.80,0.00,1.62,False,2020-07-03 11:04:00,asia/jerusalem
+2020-07-03 11:04:00+03:00,1011295,2020-07-03,Butter,butter,Oils and fats,10.00,74.20,0.05,8.20,0.05,1.00,0.00,0.00,False,2020-07-03 11:04:00,asia/jerusalem
+2020-07-03 11:04:00+03:00,1012524,2020-07-03,Banana,Banana,Fruits,106.00,94.34,21.45,0.35,1.16,1.06,0.00,2.76,False,2020-07-03 11:04:00,asia/jerusalem
+2020-07-03 11:04:00+03:00,1012989,2020-07-03,Egg,Hard-boiled egg,Eggs and their products,49.00,75.46,0.55,5.18,6.14,136.22,0.00,0.00,False,2020-07-03 11:04:00,asia/jerusalem
+2020-07-03 13:22:00+03:00,1010526,2020-07-03,Canned Tuna Fish,Tuna fish preserved in oil,Fish and seafood,150.00,297.00,0.00,12.32,43.70,624.00,0.00,0.00,False,2020-07-03 13:22:00,asia/jerusalem
+2020-07-03 17:00:00+03:00,1010973,2020-07-03,Watermelon,watermelon,Fruits,201.00,79.25,17.11,0.30,1.23,2.01,0.00,0.80,False,2020-07-03 17:00:00,asia/jerusalem
+2020-07-03 18:08:00+03:00,1007987,2020-07-03,Grapes,grapes,Fruits,142.00,108.94,24.42,0.23,1.02,2.84,0.00,1.28,False,2020-07-03 18:08:00,asia/jerusalem
+2020-07-03 19:48:00+03:00,1006969,2020-07-03,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",70.00,97.89,15.22,1.62,3.50,46.44,0.00,1.86,False,2020-07-03 19:48:00,asia/jerusalem
+2020-07-03 19:48:00+03:00,1008740,2020-07-03,Broccoli,Boiled broccoli,Vegetables,49.00,27.01,3.52,0.20,1.17,20.09,0.00,1.62,False,2020-07-03 19:48:00,asia/jerusalem
+2020-07-03 19:48:00+03:00,1009965,2020-07-03,Cherry tomatoes,Cherry tomatoes,Vegetables,136.00,19.20,3.20,0.00,1.60,0.00,0.00,1.60,False,2020-07-03 19:48:00,asia/jerusalem
+2020-07-03 19:48:00+03:00,1011783,2020-07-03,Sweet potato,Baked sweet potato,"Pasta, Grains and Side dishes",100.00,90.00,17.31,0.15,2.00,221.00,0.00,3.30,False,2020-07-03 19:48:00,asia/jerusalem
+2020-07-03 19:48:00+03:00,1012938,2020-07-03,Egg,A fried egg,Eggs and their products,92.00,180.32,0.76,13.65,12.80,190.44,,0.00,False,2020-07-03 19:48:00,asia/jerusalem
+2020-07-03 20:56:00+03:00,1006875,2020-07-03,Apple,Apple,Fruits,91.00,47.32,12.57,0.15,0.24,0.91,0.00,2.18,False,2020-07-03 20:56:00,asia/jerusalem
+2020-07-03 20:56:00+03:00,1007987,2020-07-03,Grapes,grapes,Fruits,142.00,108.94,24.42,0.23,1.02,2.84,0.00,1.28,False,2020-07-03 20:56:00,asia/jerusalem
+2020-07-03 20:56:00+03:00,1008880,2020-07-03,Milk,Milk 3% fat,"milk, cream cheese and yogurts",192.00,115.20,8.83,5.76,6.34,96.00,0.00,0.00,False,2020-07-03 20:56:00,asia/jerusalem
+2020-07-03 20:56:00+03:00,1012340,2020-07-03,Nectarine,nectarine,Fruits,90.00,39.60,7.96,0.29,0.95,0.00,0.00,1.53,False,2020-07-03 20:56:00,asia/jerusalem
+2020-07-03 20:56:00+03:00,1014061,2020-07-03,,isopure protein powder,Others ,29.00,29.00,,,7.25,46.40,,,False,2020-07-03 20:56:00,asia/jerusalem
+2020-07-04 09:03:00+03:00,1006938,2020-07-04,Raisins,raisins,Fruits,18.00,53.82,13.59,0.08,0.55,1.98,0.00,0.67,False,2020-07-04 09:03:00,asia/jerusalem
+2020-07-04 09:03:00+03:00,1008624,2020-07-04,Almonds,Unroasted almonds,"Nuts, seeds, and products",20.00,124.03,1.81,9.99,4.23,0.20,0.00,2.50,False,2020-07-04 09:03:00,asia/jerusalem
+2020-07-04 09:03:00+03:00,1009743,2020-07-04,Oatmeal,Uncooked plain and instant oatmeal,"Pasta, Grains and Side dishes",40.00,151.60,23.04,2.61,5.26,2.40,0.00,4.04,False,2020-07-04 09:03:00,asia/jerusalem
+2020-07-04 09:03:00+03:00,1009983,2020-07-04,Natural Yogurt,Yogurt Danone bio 3% fat,"milk, cream cheese and yogurts",150.00,99.00,7.35,4.50,7.35,135.00,0.00,1.35,False,2020-07-04 09:03:00,asia/jerusalem
+2020-07-04 09:03:00+03:00,1012082,2020-07-04,Walnuts,Walnuts,"Nuts, seeds, and products",20.00,130.80,1.40,13.04,3.05,0.40,0.00,1.34,False,2020-07-04 09:03:00,asia/jerusalem
+2020-07-04 13:41:00+03:00,1006969,2020-07-04,Quinoa,Cooked quinoa,"Pasta, Grains and Side dishes_wholewheat",70.00,97.89,15.22,1.62,3.50,46.44,0.00,1.86,True,2020-07-04 13:41:00,asia/jerusalem
+2020-07-04 13:41:00+03:00,1007260,2020-07-04,Cucumber,cucumber,Vegetables,26.00,3.90,0.81,0.03,0.16,0.52,0.00,0.13,True,2020-07-04 13:41:00,asia/jerusalem
+2020-07-04 13:41:00+03:00,1008740,2020-07-04,Broccoli,Boiled broccoli,Vegetables,24.50,13.51,1.76,0.10,0.58,10.04,0.00,0.81,True,2020-07-04 13:41:00,asia/jerusalem
+2020-07-04 13:41:00+03:00,1012025,2020-07-04,Zucchini,Squash,Vegetables,39.50,9.07,1.17,0.12,0.45,3.00,0.00,0.38,True,2020-07-04 13:41:00,asia/jerusalem
+2020-07-04 16:52:00+03:00,1006875,2020-07-04,Apple,Apple,Fruits,182.00,94.64,25.13,0.31,0.47,1.82,0.00,4.37,False,2020-07-04 16:52:00,asia/jerusalem
+2020-07-04 16:52:00+03:00,1008880,2020-07-04,Milk,Milk 3% fat,"milk, cream cheese and yogurts",180.00,108.00,8.28,5.40,5.94,90.00,0.00,0.00,False,2020-07-04 16:52:00,asia/jerusalem
+2020-07-04 16:52:00+03:00,1012340,2020-07-04,Nectarine,nectarine,Fruits,90.00,39.60,7.96,0.29,0.95,0.00,0.00,1.53,False,2020-07-04 16:52:00,asia/jerusalem
+2020-07-04 16:52:00+03:00,1012524,2020-07-04,Banana,Banana,Fruits,106.00,94.34,21.45,0.35,1.16,1.06,0.00,2.76,False,2020-07-04 16:52:00,asia/jerusalem
+2020-07-04 16:52:00+03:00,1014061,2020-07-04,,isopure protein powder,Others ,29.00,29.00,,,7.25,46.40,,,False,2020-07-04 16:52:00,asia/jerusalem
+2020-07-04 20:17:00+03:00,1009324,2020-07-04,Malt beverage,Black beer without alcohol,fruit juices and soft drinks,330.00,122.10,26.57,0.40,0.69,42.90,0.99,0.00,False,2020-07-04 20:17:00,asia/jerusalem
+2020-07-04 20:17:00+03:00,1009407,2020-07-04,Yellow Cheese,Yellow cheese 32% fat Tnuva Cheddar,Hard cheese,16.00,63.36,0.08,5.12,4.24,94.40,0.00,0.00,False,2020-07-04 20:17:00,asia/jerusalem
+2020-07-04 20:17:00+03:00,1011295,2020-07-04,Butter,butter,Oils and fats,10.00,74.20,0.05,8.20,0.05,1.00,0.00,0.00,False,2020-07-04 20:17:00,asia/jerusalem
+2020-07-04 20:17:00+03:00,1011706,2020-07-04,Olives,olives,Med Oil and fats,64.00,79.36,1.49,7.72,0.58,627.84,0.00,2.05,False,2020-07-04 20:17:00,asia/jerusalem
+2020-07-04 20:17:00+03:00,1012497,2020-07-04,Bread,Brown bread,Bread,60.00,163.80,32.94,1.32,5.16,234.00,0.00,4.02,False,2020-07-04 20:17:00,asia/jerusalem
