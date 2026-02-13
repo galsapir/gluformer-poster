@@ -219,6 +219,15 @@ body > header .publication-info {
     font-size: 0.8rem;
   }
 
+  body > header address {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  body > header .affiliations {
+    display: none;
+  }
+
   main > * {
     margin: 0.5rem 1rem;
   }
