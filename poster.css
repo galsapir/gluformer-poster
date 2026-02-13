@@ -186,7 +186,7 @@ body > header .publication-info {
     min-width: 100%;
     max-width: 100%;
     width: calc(100% - var(--gap));
-    flex-basis: calc(100% - var(--gap));
+    flex-basis: auto;
     flex-grow: 0;
   }
 }
