@@ -771,46 +771,107 @@ main::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
 }
 
-/* ===== Print Styles for A0 ===== */
+/* ===== Print Styles for A0 Poster (841 × 1189 mm) ===== */
+/* Font size reference (from poster research):
+   Title: 88pt, Subtitle: 36pt, Authors: 22pt,
+   Section headers: 40pt, Body: 28pt, Punchline: 52pt,
+   Stat numbers: 72pt, Captions: 20pt, Lists: 26pt */
+
 @media print {
   @page {
     size: 841mm 1189mm;
-    margin: 15mm;
+    margin: 12mm;
   }
 
-  body {
-    display: block;
-    font-size: 24pt;
+  /* Force everything onto a single page */
+  html, body {
+    width: 817mm;
+    height: 1165mm;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     background: white;
   }
 
+  /* Body = full-page grid: header / main / footer */
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 28pt;
+    line-height: 1.4;
+  }
+
+  /* Force all colored backgrounds to print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ---- HEADER ---- */
   body > header {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    padding: 20mm 25mm;
+    gap: 15mm;
+    padding: 15mm 20mm;
     background: var(--color-primary) !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    align-items: center;
+  }
+
+  body > header img {
+    max-height: 40mm;
+  }
+
+  body > header .nature-logo {
+    max-height: 30mm;
+  }
+
+  body > header .mbzuai-logo {
+    max-height: 35mm;
   }
 
   body > header h1 {
-    font-size: 64pt;
+    font-size: 88pt;
+    line-height: 1.1;
   }
 
   body > header h2 {
-    font-size: 28pt;
+    font-size: 36pt;
+    line-height: 1.25;
   }
 
   body > header address {
+    font-size: 22pt;
+    line-height: 1.5;
+  }
+
+  body > header .affiliations {
+    display: block;
     font-size: 18pt;
   }
 
+  body > header .publication-info {
+    display: none;
+  }
+
+  body > header::after {
+    height: 4mm;
+  }
+
+  /* ---- MAIN GRID ---- */
+  /* Layout:
+     Row 1: Story panel (full width)
+     Row 2: Punchline (full width)
+     Row 3: Hero panel (full width)
+     Row 4: Generalization | Outperforms | Prediabetes | Diet
+     Row 5: Takeaways (full width) */
   main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8mm;
-    padding: 8mm;
-    overflow: visible;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-gap: 6mm;
+    padding: 6mm;
+    overflow: hidden;
+    min-height: 0;
   }
 
   main > * {
@@ -822,9 +883,12 @@ main::-webkit-scrollbar-thumb:hover {
     width: auto;
   }
 
+  /* ---- ARTICLE PANELS ---- */
   article {
     box-shadow: none;
     border: 1px solid var(--color-border);
+    padding: 0 5mm 5mm 5mm;
+    animation: none !important;
   }
 
   article:hover {
@@ -832,53 +896,153 @@ main::-webkit-scrollbar-thumb:hover {
   }
 
   article > header {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding: 3mm 5mm;
+    margin: 0 -5mm auto -5mm;
   }
 
+  article > header > h3 {
+    font-size: 40pt;
+    font-weight: 700;
+  }
+
+  article > *,
+  article > p,
+  article > ul,
+  article > ol,
+  article > figure {
+    margin: 3mm 0 auto 0;
+  }
+
+  /* ---- ROW 1: STORY PANEL ---- */
   article.story-panel {
     grid-column: 1 / -1;
     grid-row: 1;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
   }
 
   .story-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 8mm;
   }
 
+  .story-text ol > li {
+    font-size: 26pt;
+    line-height: 1.45;
+    margin-bottom: 3mm;
+  }
+
+  .story-figure img {
+    padding: 2mm;
+  }
+
+  /* ---- ROW 2: PUNCHLINE ---- */
   article.punchline {
     grid-column: 1 / -1;
     grid-row: 2;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding: 8mm 15mm;
   }
 
   article.punchline p {
-    font-size: 42pt;
+    font-size: 52pt;
+    line-height: 1.3;
   }
 
+  /* ---- ROW 3: HERO PANEL ---- */
   article.hero-panel {
     grid-column: 1 / -1;
     grid-row: 3;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding: 0 8mm 8mm 8mm;
   }
 
-  /* No separate architecture panel — absorbed into story panel */
-
-  body > footer {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    padding: 8mm 25mm;
+  article.hero-panel > header {
+    margin: 0 -8mm auto -8mm;
+    padding: 3mm 8mm;
   }
 
+  article.hero-panel .hero-grid {
+    gap: 6mm;
+  }
+
+  article.hero-panel figure figcaption {
+    font-size: 20pt;
+  }
+
+  .stat-card {
+    padding: 5mm;
+  }
+
+  .stat-card .stat-number {
+    font-size: 72pt;
+  }
+
+  .stat-card .stat-label {
+    font-size: 22pt;
+  }
+
+  .stat-card .stat-contrast {
+    font-size: 20pt;
+  }
+
+  /* ---- ROW 4: FOUR COLUMN PANELS ---- */
+  /* Generalization = child 4, Outperforms = 5, Prediabetes = 6, Diet = 7 */
+  main > article:nth-child(4),
+  main > article:nth-child(5),
+  main > article:nth-child(6),
+  main > article:nth-child(7) {
+    grid-row: 4;
+  }
+
+  main > article:nth-child(4) { grid-column: 1; }
+  main > article:nth-child(5) { grid-column: 2; }
+  main > article:nth-child(6) { grid-column: 3; }
+  main > article:nth-child(7) { grid-column: 4; }
+
+  /* Figure captions in columns */
+  main figure figcaption {
+    font-size: 20pt;
+  }
+
+  /* Highlight result callout */
   .highlight-result {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    font-size: 24pt;
+    padding: 3mm 5mm;
   }
 
-  /* Hide interactive panel entirely in print */
+  .highlight-result strong {
+    font-size: 26pt;
+  }
+
+  /* List items in columns */
+  article ul > li,
+  article ol > li {
+    font-size: 26pt;
+    margin-bottom: 2mm;
+  }
+
+  /* ---- ROW 5: TAKEAWAYS (full width) ---- */
+  article.takeaways {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  article.takeaways .links-and-qr {
+    gap: 8mm;
+    align-items: center;
+  }
+
+  article.takeaways .poster-links p {
+    font-size: 22pt;
+  }
+
+  .qr-img {
+    width: 40mm;
+    height: 40mm;
+  }
+
+  .qr-item span {
+    font-size: 18pt;
+  }
+
+  /* ---- HIDE INTERACTIVE + SCREEN-ONLY ---- */
   article.interactive-panel {
     display: none !important;
   }
@@ -896,29 +1060,10 @@ main::-webkit-scrollbar-thumb:hover {
     display: block !important;
   }
 
-  /* QR codes should print at readable size */
-  .qr-img {
-    width: 35mm;
-    height: 35mm;
-  }
-
-  /* MBZUAI logo in print */
-  .mbzuai-logo {
-    max-height: 50mm;
-  }
-
-  .links-and-qr {
-    gap: 4mm;
-  }
-
-  /* Takeaways panel spans 2 columns for print prominence */
-  article.takeaways {
-    grid-column: span 2;
-  }
-
-  /* Animations off in print */
-  article {
-    animation: none !important;
+  /* ---- FOOTER ---- */
+  body > footer {
+    padding: 5mm 20mm;
+    font-size: 22pt;
   }
 }
 
