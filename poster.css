@@ -324,7 +324,7 @@ article > pre,
 article > div,
 article > figure,
 article > hr {
-  margin: 0.45rem 0 auto 0;
+  margin: 0.2rem 0 auto 0;
 }
 
 /* Article Headers */
@@ -521,6 +521,7 @@ main figure {
 }
 
 main figure img {
+  display: block;
   width: 100%;
   border-radius: 3px;
 }
