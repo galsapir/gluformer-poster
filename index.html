@@ -3,8 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>GluFormer — A Foundation Model for Continuous Glucose Monitoring Data</title>
+    <meta name="description" content="GluFormer predicts diabetes and cardiovascular mortality up to 11 years ahead from just 14 days of glucose data. Published in Nature (2026).">
     <link rel="stylesheet" href="poster.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="GluFormer — Predicts Diabetes 11 Years Ahead from Glucose Data">
+    <meta property="og:description" content="A foundation model trained on 10M+ glucose measurements outperforms HbA1c. 65.8% of future diabetes in top risk quartile. Nature 2026.">
+    <meta property="og:image" content="https://galsapir.github.io/gluformer-poster/assets/og-image.png">
+    <meta property="og:url" content="https://galsapir.github.io/gluformer-poster/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GluFormer — Predicts Diabetes 11 Years Ahead from Glucose Data">
+    <meta name="twitter:description" content="A foundation model trained on 10M+ glucose measurements outperforms HbA1c. Published in Nature 2026.">
+    <meta name="twitter:image" content="https://galsapir.github.io/gluformer-poster/assets/og-image.png">
+
     <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
 
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
@@ -162,10 +177,11 @@
 
       <!-- ============== ZONE 5: Interactive + Takeaways ============== -->
 
-      <article>
+      <article class="interactive-panel">
         <header><h3>Real CGM Data: 48-Hour Glucose Trace</h3></header>
         <div id="glucose-explorer" style="width:100%; min-height:280px;"></div>
-        <p class="small">Real continuous glucose monitoring data from a study participant, with meal events overlaid. Hover for details.</p>
+        <p class="small screen-only">Real continuous glucose monitoring data from a study participant, with meal events overlaid. Hover for details.</p>
+        <p class="small print-only">Interactive glucose trace with meal events available at the poster URL. Scan the QR code to explore.</p>
       </article>
 
       <article class="takeaways">
@@ -178,9 +194,19 @@
           <li><strong>Precision nutrition</strong> — dietary tokens enable personalized glucose response predictions</li>
         </ul>
         <div class="qr-section">
-          <div class="qr-links">
-            <p><strong>Paper:</strong> <a href="https://www.nature.com/articles/s41586-025-09925-9">nature.com/articles/s41586-025-09925-9</a></p>
-            <p><strong>Code:</strong> <a href="https://github.com/Guylu/GluFormer">github.com/Guylu/GluFormer</a></p>
+          <div class="qr-grid">
+            <div class="qr-item">
+              <img src="assets/qr-paper.svg" alt="QR code to Nature paper" class="qr-img">
+              <span><strong>Paper</strong><br><a href="https://www.nature.com/articles/s41586-025-09925-9">Nature (2026)</a></span>
+            </div>
+            <div class="qr-item">
+              <img src="assets/qr-code.svg" alt="QR code to GitHub repo" class="qr-img">
+              <span><strong>Code</strong><br><a href="https://github.com/Guylu/GluFormer">GitHub</a></span>
+            </div>
+            <div class="qr-item">
+              <img src="assets/qr-poster.svg" alt="QR code to interactive poster" class="qr-img">
+              <span><strong>This Poster</strong><br><a href="https://galsapir.github.io/gluformer-poster/">Interactive</a></span>
+            </div>
           </div>
         </div>
       </article>
