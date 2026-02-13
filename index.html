@@ -12,7 +12,7 @@
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="GluFormer — Predicts Diabetes 11 Years Ahead from Glucose Data">
-    <meta property="og:description" content="A foundation model trained on 10M+ glucose measurements outperforms HbA1c. 65.8% of future diabetes in top risk quartile. Nature 2026.">
+    <meta property="og:description" content="A foundation model trained on 10M+ glucose measurements outperforms HbA1c. 65.8% of future diabetes in top 25% risk group. Nature 2026.">
     <meta property="og:image" content="https://galsapir.github.io/gluformer-poster/assets/og-image.png">
     <meta property="og:url" content="https://galsapir.github.io/gluformer-poster/">
     <meta name="twitter:card" content="summary_large_image">
@@ -78,17 +78,46 @@
           <time pubdate property="datePublished" datetime="2026-01-01">2026</time>
         </span>
       </div>
-      <aside>
+      <aside class="logos-right">
         <a href="https://www.weizmann.ac.il/"><img src="assets/weizmann-logo.svg" alt="Weizmann Institute of Science"></a>
+        <a href="https://mbzuai.ac.ae/"><img src="assets/mbzuai-logo.png" alt="MBZUAI" class="mbzuai-logo"></a>
       </aside>
     </header>
 
     <main property="articleBody">
 
-      <!-- ============== ZONE 1: HERO — The showstopper result ============== -->
+      <!-- ============== FROM FIRST PRINCIPLES — How and why GluFormer works ============== -->
+
+      <article class="story-panel">
+        <header><h3>A Language Model for Glucose</h3></header>
+        <div class="story-grid">
+          <div class="story-text">
+            <ol>
+              <li><strong>The Data</strong> — The Human Phenotype Project: <strong>10,812 participants</strong>, over 10 million continuous glucose measurements (CGM) collected via wearable sensors</li>
+              <li><strong>The Idea</strong> — Treat glucose time series like language. Glucose values are tokenized into <strong>460 discrete bins</strong>, each bin acting as a word in a vocabulary</li>
+              <li><strong>The Method</strong> — A 16-layer transformer trained via <strong>next-token prediction</strong> — the same self-supervised paradigm behind large language models, applied to glucose</li>
+              <li><strong>The Surprise</strong> — The internal representations learned through this simple objective encode deep metabolic information — <strong>predicting diabetes and cardiovascular mortality up to 11 years ahead</strong></li>
+            </ol>
+          </div>
+          <div class="story-figure">
+            <figure>
+              <img src="assets/figures/architecture-diagram.svg" alt="GluFormer pipeline: CGM data is tokenized, fed into a transformer via next-token prediction, producing embeddings used for health profiling, nutrition, risk prediction, and clinical trial enhancement.">
+              <figcaption>GluFormer pipeline: glucose → tokens → transformer → embeddings → downstream clinical tasks.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============== PUNCHLINE — Readable from across the room ============== -->
+
+      <article class="punchline">
+        <p>Two weeks of glucose monitoring encodes a decade of health trajectory — and standard clinical metrics miss most of it.</p>
+      </article>
+
+      <!-- ============== HERO — The showstopper result ============== -->
 
       <article class="hero-panel" property="abstract">
-        <header><h3>The Headline Result</h3></header>
+        <header><h3>Key Results: 12 Years of Follow-Up</h3></header>
         <div class="hero-grid">
           <div class="hero-figure">
             <figure>
@@ -105,38 +134,16 @@
           <div class="hero-stats">
             <div class="stat-card stat-diabetes">
               <span class="stat-number">65.8%</span>
-              <span class="stat-label">of new-onset diabetes in GluFormer's top risk quartile</span>
-              <span class="stat-contrast">vs. 7.3% in bottom quartile</span>
+              <span class="stat-label">of new-onset diabetes in GluFormer's top 25% risk group</span>
+              <span class="stat-contrast">vs. 7.3% in bottom 25%</span>
             </div>
             <div class="stat-card stat-cv">
               <span class="stat-number">69.2%</span>
-              <span class="stat-label">of cardiovascular deaths in the top quartile</span>
-              <span class="stat-contrast">0% in bottom quartile</span>
+              <span class="stat-label">of cardiovascular deaths in the top 25%</span>
+              <span class="stat-contrast">0% in bottom 25%</span>
             </div>
           </div>
         </div>
-      </article>
-
-      <!-- ============== PUNCHLINE — Readable from across the room ============== -->
-
-      <article class="punchline">
-        <p>Two weeks of glucose monitoring encodes a decade of health trajectory — and standard clinical metrics miss most of it.</p>
-      </article>
-
-      <!-- ============== ZONE 2: Architecture & Approach ============== -->
-
-      <article>
-        <header><h3>GluFormer Architecture</h3></header>
-        <figure>
-          <img src="assets/figures/1.png" alt="GluFormer architecture: CGM data is tokenized and fed into a 16-layer transformer.">
-          <figcaption><strong>Figure 3.</strong> Glucose values tokenized into 460 discrete bins; a 16-layer transformer learns next-token prediction on data from 10,812 participants.</figcaption>
-        </figure>
-        <ol>
-          <li><strong>Tokenize</strong> — Glucose values become discrete tokens, like words in language</li>
-          <li><strong>Pre-train</strong> — Transformer learns glucose dynamics via next-token prediction</li>
-          <li><strong>Extract</strong> — Internal representations encode rich metabolic phenotypes</li>
-          <li><strong>Apply</strong> — Embeddings transfer to diverse clinical prediction tasks</li>
-        </ol>
       </article>
 
       <!-- ============== ZONE 3: Generalization & Validation ============== -->
@@ -151,9 +158,10 @@
 
       <article>
         <header><h3>Outperforms Standard Metrics</h3></header>
+        <p class="highlight-result"><strong>Prediction accuracy: 0.75</strong> (GluFormer) vs. 0.69 (composite CGM scores) vs. 0.66 (standard glucose metrics) — consistent across 3 time horizons.</p>
         <figure>
-          <img src="assets/figures/5.png" alt="GluFormer achieves higher AUC than CGM Composite Scores and GMI.">
-          <figcaption><strong>Figure 5.</strong> GluFormer consistently outperforms traditional CGM metrics (ROC AUC: 0.75 vs. 0.69 iglu vs. 0.66 GMI) for diabetes prediction across three time horizons.</figcaption>
+          <img src="assets/figures/hq/fig4-prediction.png" alt="GluFormer achieves higher prediction accuracy than CGM Composite Scores and GMI across three time horizons.">
+          <figcaption><strong>Figure 4.</strong> GluFormer consistently outperforms traditional CGM metrics (prediction accuracy: 0.75 vs. 0.69 iglu vs. 0.66 GMI) for diabetes prediction at baseline, 2-year, and 4-year horizons.</figcaption>
         </figure>
       </article>
 
@@ -170,8 +178,8 @@
       <article>
         <header><h3>Multi-Modal: Diet + Glucose</h3></header>
         <figure>
-          <img src="assets/figures/9.png" alt="Multi-modal GluFormer integrates dietary tokens with glucose data.">
-          <figcaption><strong>Figure 7.</strong> Integrating dietary tokens improves glucose prediction (91% improved correlation, 92% reduced error) — enabling personalized dietary simulation.</figcaption>
+          <img src="assets/figures/hq/fig5-diet.png" alt="Multi-modal GluFormer integrates dietary tokens with glucose data, improving correlation and reducing error.">
+          <figcaption><strong>Figure 6.</strong> Integrating dietary tokens improves glucose prediction (91% improved correlation, 92% reduced error) — enabling personalized dietary simulation.</figcaption>
         </figure>
       </article>
 
@@ -186,33 +194,25 @@
 
       <article class="takeaways">
         <header><h3>Why It Matters</h3></header>
-        <p class="small" style="margin-bottom:0.3rem">Diabetes affects <strong>500M+ people</strong> worldwide (projected 1.3B by 2050). Over-the-counter CGM devices are now FDA-approved for non-diabetic adults — creating a massive new data source for early detection.</p>
+        <p class="small" style="margin-bottom:0.3rem">GluFormer demonstrates that short-term glucose data encodes long-term health outcomes invisible to current clinical standards — opening a path to population-scale early screening.</p>
         <ul>
-          <li><strong>65.8% of future diabetes</strong> captured in one risk quartile — from just 14 days of glucose data</li>
-          <li><strong>AUC 0.75</strong> vs. 0.66 for standard metrics — across baseline, 2-year, and 4-year horizons</li>
+          <li><strong>65.8% of future diabetes</strong> captured in the top 25% risk group — from just 14 days of glucose data</li>
+          <li><strong>Prediction accuracy 0.75</strong> vs. 0.66 for standard metrics — across baseline, 2-year, and 4-year horizons</li>
           <li><strong>19 cohorts, 5 countries</strong> — generalizes across devices, ethnicities, and disease states</li>
           <li><strong>Precision nutrition</strong> — dietary tokens enable personalized glucose response predictions</li>
         </ul>
         <div class="qr-section">
           <div class="links-and-qr">
             <div class="poster-links">
-              <p><strong>Paper:</strong> <a href="https://rdcu.be/eY5fH">Free PDF</a> · <a href="https://www.nature.com/articles/s41586-025-09925-9">Nature</a></p>
+              <p><strong>Paper:</strong> <a href="https://rdcu.be/eY5fH">Free PDF</a> · <a href="https://www.nature.com/articles/s41586-025-09925-9">Nature DOI</a></p>
               <p><strong>Code:</strong> <a href="https://github.com/Guylu/GluFormer">github.com/Guylu/GluFormer</a></p>
-              <p><strong>Blog:</strong> <a href="https://galsapir.github.io/sparse-thoughts/2026/01/23/what-is-a-good-fm/">What Makes a Good Foundation Model?</a></p>
-              <p class="author-socials">
-                <strong>Gal Sapir:</strong>
-                <a href="https://x.com/galsapir_">𝕏</a> ·
-                <a href="https://bsky.app/profile/sapir.bsky.social">Bluesky</a> ·
-                <a href="https://galsapir.github.io/sparse-thoughts/">Blog</a>
-                &nbsp;&nbsp;
-                <strong>Guy Lutsker:</strong>
-                <a href="https://x.com/GLutsker">𝕏</a>
-              </p>
+              <p class="related-link">Related: <a href="https://galsapir.github.io/sparse-thoughts/2026/01/23/what-is-a-good-fm/">What Makes a Good Foundation Model?</a></p>
             </div>
             <div class="qr-item">
               <img src="assets/qr-poster.svg" alt="QR code to interactive poster" class="qr-img">
               <span><strong>Scan for<br>interactive poster</strong></span>
             </div>
+            <button class="download-btn screen-only" onclick="window.print()">⬇ Download as PDF</button>
           </div>
         </div>
       </article>
