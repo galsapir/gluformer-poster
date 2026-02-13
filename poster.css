@@ -632,6 +632,48 @@ body > footer .credits {
   display: none;
 }
 
+/* ===== Lightbox for figure zoom ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.92);
+  padding: 1rem;
+  cursor: zoom-out;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+  background: white;
+  padding: 0.5rem;
+}
+
+.lightbox p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  text-align: center;
+  margin-top: 0.75rem;
+  max-width: 40rem;
+  line-height: 1.4;
+}
+
+.lightbox p strong {
+  color: var(--color-amber);
+}
+
 /* ===== Plotly Chart Container ===== */
 #glucose-explorer {
   border-radius: var(--radius);
@@ -749,7 +791,8 @@ main::-webkit-scrollbar-thumb:hover {
     display: none;
   }
 
-  .screen-only {
+  .screen-only,
+  .lightbox {
     display: none !important;
   }
 
